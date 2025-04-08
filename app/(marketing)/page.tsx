@@ -11,7 +11,7 @@ export default function Home() {
         <Image src="/hero.svg" fill alt="hero" />
       </div>
       <div className="flex flex-col items-center gap-y-8">
-        <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center">Welcome to lingo!</h1>
+        <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center">Welcome to Tastify!</h1>
       </div>
       <div className="flex flex-col items-center gap-y-3 max-w-[330px] w-full">
         <ClerkLoading>
