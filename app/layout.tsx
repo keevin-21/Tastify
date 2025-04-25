@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
 import {
   ClerkProvider,
   SignInButton,
@@ -28,7 +29,10 @@ export default function RootLayout({
   return (
   <ClerkProvider>
     <html lang="en">
-      <body className={`${font.variable} antialiased`}>{children}</body>
+      <body className={`${font.variable} antialiased`}>
+        <Toaster />
+        { children }
+      </body>
     </html>
   </ClerkProvider>
 );

@@ -3,39 +3,39 @@ import Image from "next/image";
 
 export const Footer = () => {
     return (
-        <footer className = "hidden lg:block h-20 w-full border-t-2 border-slate-200 p-2">
+        <footer className = "bg-[#1e1e1e] hidden lg:block h-20 w-full border-t-2 border-[#121212] p-2">
             <div className = "max-w-screen-lg mx-auto flex items-center justify-evenly h-full">
-                <Button size="lg" variant="ghost" className="w-full">
+                <Button size="lg" variant="ghost" className="text-[#f5f5f5] w-full">
                     <Image
                       src="/jp.svg"
-                      alt="JAPAN"
+                      alt="JAPANESE"
                       height={32}
                       width={40}
                       className="mr-4 rounded-md"
                     />
-                    Japan
+                    Japanese
                 </Button>
 
-                <Button size="lg" variant="ghost" className="w-full">
+                <Button size="lg" variant="ghost" className="text-[#f5f5f5] w-full">
                     <Image
                       src="/it.svg"
-                      alt="ITALIA"
+                      alt="ITALIAN"
                       height={32}
                       width={40}
                       className="mr-4 rounded-md"
                     />
-                    Italia
+                    Italian
                 </Button>
 
-                <Button size="lg" variant="ghost" className="w-full">
+                <Button size="lg" variant="ghost" className="text-[#f5f5f5] w-full">
                     <Image
-                      src="/fr.svg"
-                      alt="FRAINCIA"
+                      src="/ch.svg"
+                      alt="CHINESE"
                       height={32}
                       width={40}
                       className="mr-4 rounded-md"
                     />
-                    Francia
+                    Chinese
                 </Button>
 
 

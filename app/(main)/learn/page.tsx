@@ -23,15 +23,15 @@ const LearnPage = async () => {
             <StickyWrapper /*i can use flex-row-reverse here*/>
                 <UserProgress
 
-                    activeCourse={{ title: "Japanese", imageSrc:"/jp.svg"}}
-                    hearts={5}
-                    points={100}
+                    activeCourse={userProgress.activeCourse}
+                    hearts={userProgress.hearts}
+                    points={userProgress.points}
                     hasActiveSuscription={false}    
                 />
             </StickyWrapper>
             
             <FeedWrapper /*and here*/>
-                <Header title="Japanese" />
+                <Header title={userProgress.activeCourse.title} />
             </FeedWrapper>
         </div>
     );

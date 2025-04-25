@@ -12,7 +12,7 @@ const MarketingLayout = ({ children }) => {
           <Header>
 
           </Header>
-          <main className = "flex-1 flex flex-col items-center justify-center">
+          <main className = "bg-[#1e1e1e] flex-1 flex flex-col items-center justify-center">
           {children}
           </main>
           <Footer />
