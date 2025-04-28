@@ -16,17 +16,18 @@ type Props = {
 export const Sidebar = ({ className }: Props) => {
     return (
         <div className={cn(
-            "flex bg-blue-100 h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 border-r-2 flex-col",
+            "flex bg-[#2c2c2c] border-[#2c2c2c] h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 border-r-2 flex-col",
             className
         )}>
             <Link href="/learn">
                 <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
                     <Image src="/mascot.png" height={40} width={40} alt="Mascot" />
-                        <h1 className="text 2xl font-extrabold text-slate-900">
+                        <h1 className="text 2xl font-extrabold text-[#f5f5f5]">
                             Tastify
                         </h1>
                 </div>
             </Link>
+            
             <div className="flex flex-col gap-y-2 flex-1">
                 <SidebarItem
                     label="Learn"
