@@ -81,24 +81,24 @@ const main = async () => {
         order: 3,
         title: "Japanese Cooking Tools",
       },
-//      {
-//        id: 4,
-//        unitId: 1,
-//        order: 4,
-//        title: "Basic Knife Skills",
-//      },
-//      {
-//        id: 5,
-//        unitId: 1,
-//        order: 5,
-//        title: "Making Dashi Stock",
-//      },
-//      {
-//        id: 6,
-//        unitId: 1,
-//        order: 6,
-//        title: "Preparing Rice for Sushi",
-//      },
+      {
+        id: 4,
+        unitId: 1,
+        order: 4,
+        title: "Basic Knife Skills",
+      },
+      {
+        id: 5,
+        unitId: 1,
+        order: 5,
+        title: "Making Dashi Stock",
+      },
+      {
+        id: 6,
+        unitId: 1,
+        order: 6,
+        title: "Preparing Rice for Sushi",
+      },
       // id 2-6 are example lessons
     ]);
 
