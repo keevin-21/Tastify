@@ -21,6 +21,7 @@ const main = async () => {
     await db.delete(schema.units);
     await db.delete(schema.userProgress);
     await db.delete(schema.courses);
+    await db.delete(schema.userSubscription);
 
     await db.insert(schema.courses).values([
       { id: 1, title: "Japanese", imageSrc: "/jp.svg" },
@@ -110,11 +111,24 @@ const main = async () => {
         order: 1,
         question: "What is the main focus of Japanese cuisine?",
       },
+      {
+        id: 2,
+        lessonId: 1, // Introduction to Japanese Cuisine
+        type: "ASSIST",
+        order: 2,
+        question: "The umami",
+      },
+      {
+        id: 3,
+        lessonId: 1, // Introduction to Japanese Cuisine
+        type: "SELECT",
+        order: 3,
+        question: "What is a typical Japanese dish?",
+      }
     ]);
 
     await db.insert(schema.challengesOptions).values([
       {
-        id: 1,
         challengeId: 1, // Question 1
         imageSrc: "/umami.jpg",
         correct: true,
@@ -122,7 +136,6 @@ const main = async () => {
         audioSrc: "umami.mp3",
       },
       {
-        id: 2,
         challengeId: 1, // Question 1
         imageSrc: "/sushi.jpg",
         correct: false,
@@ -130,15 +143,148 @@ const main = async () => {
         audioSrc: "sushi.mp3",
       },
       {
-        id: 3,
         challengeId: 1, // Question 1
         imageSrc: "/tempura.jpg",
         correct: false,
         text: "Tempura",
         audioSrc: "tempura.mp3",
       },
-    ])
+    ]);
+
+    await db.insert(schema.challengesOptions).values([
+      {
+        challengeId: 2, // Question 2
+        correct: true,
+        text: "Umami",
+        audioSrc: "umami.mp3",
+      },
+      {
+        challengeId: 2, // Question 2
+        correct: false,
+        text: "Sushi",
+        audioSrc: "sushi.mp3",
+      },
+      {
+        challengeId: 2, // Question 2
+        correct: false,
+        text: "Tempura",
+        audioSrc: "tempura.mp3",
+      },
+    ]);
+
+    await db.insert(schema.challengesOptions).values([
+      {
+        challengeId: 3, // Question 3
+        correct: true,
+        text: "Sushi",
+        audioSrc: "sushi.mp3",
+      },
+      {
+        challengeId: 3, // Question 3
+        correct: false,
+        text: "Ramen",
+        audioSrc: "ramen.mp3",
+      },
+      {
+        challengeId: 3, // Question 3
+        correct: false,
+        text: "Tempura",
+        audioSrc: "tempura.mp3",
+      },
+
+    ]);
     
+    await db.insert(schema.challenges).values([
+      {
+        id: 4,
+        lessonId: 2, // Essential Ingredients
+        type: "SELECT",
+        order: 1,
+        question: "What is the main focus of Japanese cuisine?",
+      },
+      {
+        id: 5,
+        lessonId: 2, // Essential Ingredients
+        type: "ASSIST",
+        order: 2,
+        question: "The umami",
+      },
+      {
+        id: 6,
+        lessonId: 2, // Essential Ingredients
+        type: "SELECT",
+        order: 3,
+        question: "What is a typical Japanese dish?",
+      }
+    ]);
+
+    await db.insert(schema.challengesOptions).values([
+      {
+        challengeId: 4, // Question 1
+        imageSrc: "/umami.jpg",
+        correct: true,
+        text: "Umami",
+        audioSrc: "umami.mp3",
+      },
+      {
+        challengeId: 4, // Question 1
+        imageSrc: "/sushi.jpg",
+        correct: false,
+        text: "Sushi",
+        audioSrc: "sushi.mp3",
+      },
+      {
+        challengeId: 4, // Question 1
+        imageSrc: "/tempura.jpg",
+        correct: false,
+        text: "Tempura",
+        audioSrc: "tempura.mp3",
+      },
+    ]);
+
+    await db.insert(schema.challengesOptions).values([
+      {
+        challengeId: 5, // Question 2
+        correct: true,
+        text: "Umami",
+        audioSrc: "umami.mp3",
+      },
+      {
+        challengeId: 5, // Question 2
+        correct: false,
+        text: "Sushi",
+        audioSrc: "sushi.mp3",
+      },
+      {
+        challengeId: 5, // Question 2
+        correct: false,
+        text: "Tempura",
+        audioSrc: "tempura.mp3",
+      },
+    ]);
+
+    await db.insert(schema.challengesOptions).values([
+      {
+        challengeId: 6, // Question 3
+        correct: true,
+        text: "Sushi",
+        audioSrc: "sushi.mp3",
+      },
+      {
+        challengeId: 6, // Question 3
+        correct: false,
+        text: "Ramen",
+        audioSrc: "ramen.mp3",
+      },
+      {
+        challengeId: 6, // Question 3
+        correct: false,
+        text: "Tempura",
+        audioSrc: "tempura.mp3",
+      },
+
+    ]);
+
     console.log("Seeding finished ✅");
   } catch (error) {
     console.error("❌ Error during seeding:", error);

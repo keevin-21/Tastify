@@ -24,7 +24,8 @@ const buttonVariants = cva(
 
         secondary:
           "bg-[#FF6F1F] text-primary-foreground hover:bg-[#FF6F1F]/90 border-[#cc570f] border-b-4 active:border-b-0",
-        secondaryOutline: "bg-white text-[#FF6F1F] hover:bg-slate-100 border border-[#FF6F1F]",
+        secondaryOutline: 
+          "bg-[#2c2c2c] text-[#f5f5f5] hover:bg-[#3c3c3c] border border-[#3c3c3c] transition-all duration-300",
 
 
         danger:

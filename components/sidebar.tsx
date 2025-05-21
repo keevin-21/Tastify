@@ -49,7 +49,7 @@ export const Sidebar = ({ className }: Props) => {
 
                 <SidebarItem
                     label="Shop"
-                    href="/Shop"
+                    href="/shop"
                     iconSrc="/shop.png"    //put svg icon in public folde4r
                 />
             </div>

@@ -2,16 +2,19 @@ import { FeedWrapper } from "@/components/feed-wrapper";
 import { StickyWrapper } from "@/components/sticky-wrapper";
 import { UserProgress } from "@/components/user-progress";
 import { Header } from "./header";
-import { getCourseProgress, getLessonPercent, getUnits, getUserProgress } from "@/db/queries";
+import { getCourseProgress, getLessonPercent, getUnits, getUserProgress, getUserSubscription } from "@/db/queries";
 import { redirect } from "next/navigation";
 import { units } from "@/db/schema";
 import { Unit } from "./unit";
+import { Promo } from "@/components/promo";
+import { Quests } from "@/components/quests";
 
 const LearnPage = async () => {
     const userProgressPromise = getUserProgress();
     const unitsData = getUnits();
     const courseProgressPromise = getCourseProgress();
     const lessonPercentPromise = getLessonPercent();
+    const userSubscriptionPromise = getUserSubscription();
     
 
     const [
@@ -19,11 +22,13 @@ const LearnPage = async () => {
         units,
         courseProgress,
         lessonPercent,
+        userSubscription,
     ] = await Promise.all([
         userProgressPromise,
         unitsData,
         courseProgressPromise,
         lessonPercentPromise,
+        userSubscriptionPromise,
     ]);
 
     if (!userProgress || !userProgress.activeCourse) {
@@ -34,6 +39,8 @@ const LearnPage = async () => {
         redirect("/courses");
     }
 
+    const isPremium = !!userSubscription?.isActive;
+
     return (
         <div className="flex flex-row-reverse gap-[48px] px-6">
             <StickyWrapper /*i can use flex-row-reverse here*/>
@@ -42,8 +49,12 @@ const LearnPage = async () => {
                     activeCourse={userProgress.activeCourse}
                     hearts={userProgress.hearts}
                     points={userProgress.points}
-                    hasActiveSuscription={false}    
+                    hasActiveSuscription={isPremium}    
                 />
+                {!isPremium && (
+                    <Promo />
+                )}
+                <Quests points={userProgress.points} />
             </StickyWrapper>
             
             <FeedWrapper /*and here*/>
