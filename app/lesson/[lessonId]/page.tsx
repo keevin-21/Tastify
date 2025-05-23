@@ -3,43 +3,42 @@ import { redirect } from "next/navigation";
 import { Quiz } from "../quiz";
 
 type Props = {
-    params: {
-        lessonId: number;
-    };
+  params: Promise<{ lessonId: string }>;
 };
 
 const LessonIdPage = async ({ params }: Props) => {
-    const lessonPromise  = getLesson(params.lessonId);
-    const userProgressPromise = getUserProgress();
-    const userSubscriptionPromise = getUserSubscription();
+  const { lessonId } = await params;
 
-    const [
-        lesson,
-        userProgress,
-        userSubscription,
-    ] = await Promise.all([
-        lessonPromise,
-        userProgressPromise,
-        userSubscriptionPromise,
-    ]);
+  const lessonPromise = getLesson(parseInt(lessonId));
+  const userProgressPromise = getUserProgress();
+  const userSubscriptionPromise = getUserSubscription();
 
-    if (!lesson || !userProgress) {
-        redirect("/learn");
-    }
+  const [lesson, userProgress, userSubscription] = await Promise.all([
+    lessonPromise,
+    userProgressPromise,
+    userSubscriptionPromise,
+  ]);
 
-    const initialPercent = lesson.challenges.filter((challenge) => challenge.completed).length / lesson.challenges.length * 100;
+  if (!lesson || !userProgress) {
+    redirect("/learn");
+  }
 
-    return (
-        <div>
-            <Quiz
-                initialLessonId={lesson.id}
-                initialLessonChallenges={lesson.challenges}
-                initialHearts={userProgress.hearts}
-                initialPercent={initialPercent}
-                userSuscription={userSubscription}
-            />
-        </div>
-    )
-}
+  const initialPercent =
+    (lesson.challenges.filter((challenge) => challenge.completed).length /
+      lesson.challenges.length) *
+    100;
+
+  return (
+    <div>
+      <Quiz
+        initialLessonId={lesson.id}
+        initialLessonChallenges={lesson.challenges}
+        initialHearts={userProgress.hearts}
+        initialPercent={initialPercent}
+        userSubscription={userSubscription}
+      />
+    </div>
+  );
+};
 
 export default LessonIdPage;

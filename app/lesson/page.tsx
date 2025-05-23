@@ -29,7 +29,7 @@ const LessonPage = async () => {
                 initialLessonChallenges={lesson.challenges}
                 initialHearts={userProgress.hearts}
                 initialPercent={initialPercent}
-                userSuscription={userSubscription}
+                userSubscription={userSubscription}
             />
         </div>
     )
