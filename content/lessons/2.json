@@ -1,0 +1,32 @@
+{
+  "context": {
+    "introduction": "En esta lección avanzaremos hacia conceptos más complejos. Antes de sumergirte en los desafíos, te presentamos información clave para entender mejor el tema.",
+    "sections": [
+      {
+        "title": "Tema Principal",
+        "icon": "BookOpen",
+        "content": "Esta lección se enfoca en técnicas avanzadas y su aplicación en escenarios reales. Estos conocimientos te permitirán resolver problemas más complejos."
+      },
+      {
+        "title": "Objetivos de Aprendizaje",
+        "icon": "Target",
+        "content": "Dominar conceptos avanzados y aplicarlos correctamente. Desarrollar la capacidad de análisis para identificar la mejor solución en diferentes contextos."
+      },
+      {
+        "title": "Estructura de la Lección",
+        "icon": "ListChecks",
+        "content": "La lección está organizada en una serie de desafíos progresivos que te ayudarán a construir tu conocimiento paso a paso, desde lo básico hasta aplicaciones más complejas."
+      },
+      {
+        "title": "Recomendaciones",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Analiza cuidadosamente todas las opciones antes de elegir",
+          "Recuerda los conceptos aprendidos en la lección anterior",
+          "Busca patrones recurrentes en las preguntas",
+          "Si cometes un error, reflexiona sobre el porqué antes de continuar"
+        ]
+      }
+    ]
+  }
+} 

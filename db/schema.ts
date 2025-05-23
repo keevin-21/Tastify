@@ -1,5 +1,5 @@
 import { pgTable, serial, text, integer, pgEnum, boolean, timestamp } from "drizzle-orm/pg-core";
-import { relations } from "drizzle-orm";
+import { relations, sql } from "drizzle-orm";
 
 export const courses = pgTable("courses", {
     id: serial("id").primaryKey(),
@@ -92,6 +92,21 @@ export const challengeProgressRelations = relations(challengeProgress, ({ one })
     }),
 }));
 
+export const questProgress = pgTable("quest_progress", {
+    id: serial("id").primaryKey(),
+    userId: text("user_id").notNull(),
+    questId: integer("quest_id").notNull(),
+    completed: boolean("completed").notNull().default(false),
+    completedAt: timestamp("completed_at"),
+});
+
+export const questProgressRelations = relations(questProgress, ({ one }) => ({
+    userProgress: one(userProgress, {
+        fields: [questProgress.userId],
+        references: [userProgress.userId],
+    }),
+}));
+
 export const userProgress = pgTable("user_progress", {
     userId: text("user_id").primaryKey(),
     userName: text("user_name").notNull().default("user"),
@@ -99,13 +114,16 @@ export const userProgress = pgTable("user_progress", {
     activeCourseId: integer("active_course_id").references(() => courses.id, { onDelete: "cascade" }),
     hearts: integer("hearts").notNull().default(5),
     points: integer("points").notNull().default(0),
+    streakCount: integer("streak_count").notNull().default(0),
+    lastLoginDate: timestamp("last_login_date").notNull().default(sql`CURRENT_TIMESTAMP`),
 });
 
-export const userProgressRelations = relations(userProgress, ({ one }) => ({
+export const userProgressRelations = relations(userProgress, ({ one, many }) => ({
     activeCourse: one(courses, {
         fields: [userProgress.activeCourseId],
         references: [courses.id],
     }),
+    questProgress: many(questProgress),
 }));
 
 export const userSubscription = pgTable("user_subscription", {

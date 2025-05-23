@@ -8,6 +8,8 @@ import "./globals.css";
 import { ExitModal } from "@/components/modals/exit-modal";
 import { HeartsModal } from "@/components/modals/hearts-modal";
 import { PracticeModal } from "@/components/modals/practice-modal";
+import { StreakUpdater } from "@/components/streak-updater";
+import { cn } from "@/lib/utils";
 
 const font = Nunito({
   variable: "--font-nunito",
@@ -27,11 +29,12 @@ export default function RootLayout({
   return (
   <ClerkProvider>
     <html lang="en">
-      <body className={`${font.variable} antialiased`}>
+      <body className={cn(font.variable, "bg-[#1e1e1e] antialiased")}>
         <Toaster />
         <ExitModal />
         <HeartsModal />
         <PracticeModal />
+        <StreakUpdater />
         { children }
       </body>
     </html>

@@ -70,7 +70,7 @@ export const Items = ({
                     {hearts === 5 ? "full" : (
                         <div className="flex items-center gap-x-2">
                             <Image
-                                src="/points.png"
+                                src="/points.svg"
                                 alt="Points"
                                 height={20}
                                 width={20}

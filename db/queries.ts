@@ -2,7 +2,7 @@ import { cache } from "react";
 import db from "./drizzle";
 import { auth } from "@clerk/nextjs/server";
 import { eq } from "drizzle-orm";
-import { courses, lessons, units, userProgress, challengeProgress, challenges, userSubscription } from "./schema";
+import { courses, lessons, units, userProgress, challengeProgress, challenges, userSubscription, questProgress } from "./schema";
 
 export const getUserProgress = cache(async () => {
     const { userId } = await auth();
@@ -194,6 +194,20 @@ export const getLessonPercent = cache(async () => {
 
     return percentage;
 })
+
+export const getQuestProgress = cache(async () => {
+    const { userId } = await auth();
+
+    if (!userId) {
+        return [];
+    }
+
+    const data = await db.query.questProgress.findMany({
+        where: eq(questProgress.userId, userId),
+    });
+
+    return data;
+});
 
 const DAY_IN_MILLISECONDS = 86_400_000;
 

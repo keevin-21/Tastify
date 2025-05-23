@@ -132,3 +132,32 @@ export const refillHearts = async () => {
     revalidatePath("/leaderboard");
     revalidatePath("/quests");
 }
+
+export const updateUserPoints = async (pointsToAdd: number) => {
+    const { userId } = await auth();
+
+    if (!userId) {
+        throw new Error("Unauthorized");
+    }
+
+    const currentUserProgress = await db.query.userProgress.findFirst({
+        where: eq(userProgress.userId, userId),
+    });
+
+    if (!currentUserProgress) {
+        throw new Error("User progress not found");
+    }
+
+    await db.update(userProgress)
+        .set({
+            points: currentUserProgress.points + pointsToAdd,
+        })
+        .where(eq(userProgress.userId, userId));
+
+    revalidatePath("/learn");
+    revalidatePath("/shop");
+    revalidatePath("/leaderboard");
+    revalidatePath("/quests");
+
+    return { points: currentUserProgress.points + pointsToAdd };
+};

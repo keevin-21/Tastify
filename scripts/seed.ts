@@ -14,6 +14,7 @@ const main = async () => {
   try {
     console.log("Seeding database...");
 
+    await db.delete(schema.questProgress);
     await db.delete(schema.challengeProgress);
     await db.delete(schema.challengesOptions);
     await db.delete(schema.challenges);

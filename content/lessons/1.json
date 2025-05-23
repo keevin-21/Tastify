@@ -1,0 +1,44 @@
+{
+  "context": {
+    "introduction": "In this lesson, you will learn the basic fundamentals of cooking. Before starting with the questions, it's important to understand the cutting techniques, temperatures, and cooking methods that every chef must master.",
+    "sections": [
+      {
+        "title": "Cutting Techniques",
+        "icon": "BookOpen",
+        "content": "Basic cuts are fundamental in professional cooking. You'll learn about brunoise (small 1-3mm cube cuts), julienne (thin strips), chiffonade (thin strips for leaves), and dice (1-2cm cubes). Precision in these cuts not only improves presentation but also ensures even cooking."
+      },
+      {
+        "title": "Cooking Methods",
+        "icon": "Layers",
+        "content": "We'll master both moist and dry cooking methods. In moist methods, we'll cover boiling, poaching, and steaming. In dry methods, you'll learn about roasting, baking, and sautéing. Each method affects ingredients and their nutrients differently."
+      },
+      {
+        "title": "Temperatures and Times",
+        "icon": "Target",
+        "listItems": [
+          "Slow cooking: 85-96°C (185-205°F), ideal for stews and sauces",
+          "Water boiling point: 100°C (212°F) at sea level",
+          "Cake baking: 180-190°C (350-375°F) for 25-35 minutes",
+          "Meat searing: 200-230°C (390-450°F) for 2-3 minutes per side",
+          "Steam cooking: 100°C (212°F), maintains nutrients and textures"
+        ]
+      },
+      {
+        "title": "Practical Tips",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Always preheat the oven before baking",
+          "Sharp knives are safer than dull ones",
+          "Use a stable, non-slip cutting board",
+          "Mise en place (advance preparation) is crucial",
+          "Test oil temperature with a pinch of flour: if it bubbles gently, it's ready"
+        ]
+      },
+      {
+        "title": "Key Safety Points",
+        "icon": "ListChecks",
+        "content": "Kitchen safety is paramount. Proteins like chicken must reach an internal temperature of 74°C (165°F), beef can vary according to desired doneness (63°C/145°F for medium). Always use separate cutting boards for raw meats and vegetables."
+      }
+    ]
+  }
+} 
