@@ -22,7 +22,7 @@ export const UnitBanner = ({
             </div>
 
             <Link href="/lesson">
-                <Button size="lg" variant="secondary" className="hidden lg:flex border-2 border-b-4 active:border-b-2">
+                <Button size="lg" variant="secondary" className="hidden lg:flex border-2 border-b-4 active:border-b-2 hover:scale-105 hover:shadow-sm transition-all duration-300">
                     <NotebookText className="mr-2"/>
                     Continue
                 </Button>

@@ -3,9 +3,10 @@
 import { useState, useEffect } from "react";
 import { UserProgress } from "@/components/user-progress";
 import { QuestsClient } from "./quests-client";
+import { courses } from "@/db/schema";
 
 type UserProgressType = {
-    activeCourse: any;
+    activeCourse: typeof courses.$inferSelect;
     hearts: number;
     points: number;
     streakCount: number;

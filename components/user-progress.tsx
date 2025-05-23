@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import { InfinityIcon, Flame } from "lucide-react";
+import { InfinityIcon } from "lucide-react";
 import { courses } from "@/db/schema";
 
 type Props = {

@@ -29,7 +29,6 @@ type LessonContextProps = {
 export const LessonContext = ({
   lessonId,
   title,
-  challengesCount,
   contextData,
 }: LessonContextProps) => {
   const [isReady, setIsReady] = useState(false);
@@ -107,7 +106,7 @@ export const LessonContext = ({
             <Button 
               size="lg" 
               variant="secondary"
-              className="bg-[#FF6F1F] hover:bg-[#FF6F1F]/90 text-white"
+              className="bg-[#FF6F1F] hover:bg-[#FF6F1F]/90 text-white hover:scale-105 transition-all duration-300"
               onClick={() => setIsReady(true)}
             >
               {isReady ? (

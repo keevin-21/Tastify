@@ -27,7 +27,10 @@ const QuestsPage = async () => {
         <div className="flex flex-row-reverse gap-[48px] px-6">
             <StickyWrapper>
                 <QuestsWrapper 
-                    userProgress={userProgress}
+                    userProgress={{
+                        ...userProgress,
+                        activeCourse: userProgress.activeCourse!
+                    }}
                     userSubscription={userSubscription}
                     questProgress={questProgressData}
                 />
@@ -53,7 +56,10 @@ const QuestsPage = async () => {
                         Complete quests to earn rewards.
                     </p>
                     <QuestsWrapper 
-                        userProgress={userProgress}
+                        userProgress={{
+                            ...userProgress,
+                            activeCourse: userProgress.activeCourse!
+                        }}
                         userSubscription={userSubscription}
                         questProgress={questProgressData}
                         questsOnly={true}

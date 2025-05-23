@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { QUESTS } from "@/constants";
-import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 import { claimQuestReward } from "@/actions/quest-progress";
 import Image from "next/image";
