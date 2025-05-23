@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { MobileSidebar } from "./mobile-sidebar"
 
 export const MobileHeader = () => {
