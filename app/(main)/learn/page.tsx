@@ -4,7 +4,6 @@ import { UserProgress } from "@/components/user-progress";
 import { Header } from "./header";
 import { getCourseProgress, getLessonPercent, getUnits, getUserProgress, getUserSubscription } from "@/db/queries";
 import { redirect } from "next/navigation";
-import { units } from "@/db/schema";
 import { Unit } from "./unit";
 import { Promo } from "@/components/promo";
 import { Quests } from "@/components/quests";

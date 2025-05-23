@@ -4,7 +4,6 @@ import { UserProgress } from "@/components/user-progress";
 import { getLeaderboardUsers, getUserProgress, getUserSubscription } from "@/db/queries";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Promo } from "@/components/promo";
 import { Quests } from "@/components/quests";
@@ -65,7 +64,39 @@ const LeaderboardPage = async () => {
                             >
                                 <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2c2c2c] mr-4">
                                     <p className="font-bold text-[#f5f5f5]">
-                                        {index + 1}
+                                    {index === 0 && (
+                                        <div className="items-center mt-1">
+                                            <Image
+                                                src="1st_place.svg"
+                                                alt="1st Place"
+                                                height={30}
+                                                width={30}
+                                            />
+                                        </div>
+                                    )}
+                                    {index === 1 && (
+                                        <div className="items-center mt-1">
+                                            <Image
+                                                src="2nd_place.svg"
+                                                alt="2nd Place"
+                                                height={30}
+                                                width={30}
+                                            />
+                                        </div>
+                                    )}
+
+                                    {index === 2 && (
+                                        <div className="items-center mt-1">
+                                            <Image
+                                                src="3rd_place.svg"
+                                                alt="3rd Place"
+                                                height={30}
+                                                width={30}
+                                            />
+                                        </div>
+                                    )}
+                                    
+                                    {index > 2 && (index + 1)}
                                     </p>
                                 </div>
                                 <Avatar className="border-2 border-[#3c3c3c] h-12 w-12 mr-4">

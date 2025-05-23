@@ -3,11 +3,6 @@ import { Nunito } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import {
   ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
 } from '@clerk/nextjs';
 import "./globals.css";
 import { ExitModal } from "@/components/modals/exit-modal";

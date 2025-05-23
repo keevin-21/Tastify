@@ -4,12 +4,9 @@ import { UserProgress } from "@/components/user-progress";
 import { getUserProgress, getUserSubscription } from "@/db/queries";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { Separator } from "@/components/ui/separator";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Progress } from "@/components/ui/progress";
 import { Promo } from "@/components/promo";
 import { QUESTS } from "@/constants";
-import { Quests } from "@/components/quests";
 
 const QuestsPage = async () => {
     const userProgressPromise = getUserProgress();

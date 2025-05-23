@@ -1,7 +1,7 @@
 "use client";
 
 import { challenges, challengesOptions, userSubscription } from "@/db/schema";
-import { use, useState, useTransition } from "react";
+import { useState, useTransition } from "react";
 import { Header } from "./header";
 import { QuestionBubble } from "./question-bubble";
 import { Challenge } from "./challenge";
@@ -50,8 +50,8 @@ export const Quiz = ({
 
     const [finishAudio] = useAudio({ src: "/finish.mp3", autoPlay: true})
     
-    const [correctAudio, _c, correctControls] = useAudio({ src:"/correct.mp3" })
-    const [incorrectAudio, _i, incorrectControls] = useAudio({ src:"/incorrect.mp3" })
+    const [correctAudio, , correctControls] = useAudio({ src:"/correct.mp3" })
+    const [incorrectAudio, , incorrectControls] = useAudio({ src:"/incorrect.mp3" })
 
     const [lessonId] = useState(initialLessonId);
     const [pending, startTransition] = useTransition();

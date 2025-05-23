@@ -10,12 +10,10 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { usePracticeModal } from "@/store/use-practice-modal";
 
 export const PracticeModal = () => {
-    const router = useRouter();
     const [isClient, setIsClient] = useState(false);
     const { isOpen, close } = usePracticeModal();
 
@@ -45,7 +43,7 @@ export const PracticeModal = () => {
                         Practice Mode
                     </DialogTitle>
                     <DialogDescription className="text-center text-neutral-400 text-base">
-                        Use practice mode to improve your skills and regain hearts. You won't lose any hearts or points in this mode.
+                        Use practice mode to improve your skills and regain hearts. You won&apos;t lose any hearts or points in this mode.
                     </DialogDescription>
                 </DialogHeader>
                 <DialogFooter className="px-6 py-4 bg-[#2c2c2c]/50 backdrop-blur-sm mt-4">
