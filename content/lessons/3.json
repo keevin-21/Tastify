@@ -1,0 +1,38 @@
+{
+  "context": {
+    "introduction": "¡Benvenuti alla cucina italiana! En esta lección descubrirás los pilares fundamentales de la auténtica cocina italiana: ingredientes de calidad, técnicas tradicionales y la importancia de la simplicidad que ha conquistado el mundo.",
+    "sections": [
+      {
+        "title": "Aceite de Oliva Extra Virgen: Oro Líquido",
+        "icon": "Sparkles",
+        "content": "El aceite de oliva extra virgen es el corazón de la cocina italiana. Se obtiene mediante prensado en frío y conserva todos los antioxidantes y sabores del fruto. Su uso va desde aliñar ensaladas hasta cocinar a fuego medio. Cada región italiana produce aceites con características únicas."
+      },
+      {
+        "title": "La Albahaca: Aroma del Mediterráneo",
+        "icon": "Layers",
+        "content": "La albahaca fresca es indispensable en la cocina italiana, especialmente en salsas de pasta como el pesto genovés y la salsa marinara. Sus hojas deben añadirse al final de la cocción para preservar su aroma delicado. La variedad 'Genovese' es considerada la mejor para uso culinario."
+      },
+      {
+        "title": "Al Dente: La Perfección en la Pasta",
+        "icon": "Target",
+        "content": "Cocinar la pasta 'al dente' significa lograr una textura firme pero no dura. La pasta debe ofrecer una ligera resistencia al morderla. Esto se logra cocinando 1-2 minutos menos del tiempo indicado en el paquete y terminando la cocción en la sartén con la salsa."
+      },
+      {
+        "title": "Pecorino Romano: El Rey de los Quesos",
+        "icon": "BookOpen",
+        "content": "El Pecorino Romano es el queso tradicional para la auténtica Carbonara romana. Este queso de oveja, curado y salado, aporta un sabor intenso y picante que se derrite perfectamente con el calor de la pasta y los huevos, creando una crema sedosa sin necesidad de nata."
+      },
+      {
+        "title": "Secretos de la Tradición",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Usa siempre aceite de oliva extra virgen de primera presión en frío",
+          "La albahaca nunca se corta con cuchillo, solo se rasga con las manos",
+          "Prueba la pasta 2 minutos antes del tiempo indicado",
+          "El Pecorino Romano debe rallarse fino y añadirse fuera del fuego",
+          "La simplicidad es clave: pocos ingredientes, pero de la mejor calidad"
+        ]
+      }
+    ]
+  }
+} 

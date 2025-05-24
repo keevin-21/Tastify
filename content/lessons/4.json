@@ -1,0 +1,44 @@
+{
+  "context": {
+    "introduction": "¡안녕하세요! (Annyeonghaseyo!) Bienvenido a los fundamentos de la cocina coreana. En esta lección descubrirás los ingredientes esenciales, técnicas de fermentación y métodos de cocción que hacen única a esta fascinante gastronomía.",
+    "sections": [
+      {
+        "title": "Kimchi: El Tesoro Fermentado",
+        "icon": "Sparkles",
+        "content": "El kimchi es el vegetal fermentado más emblemático de Corea, tradicionalmente hecho con col napa. Este súper alimento se fermenta con sal, gochugaru (chile en polvo), ajo, jengibre y otros condimentos. Rico en probióticos, es tanto un acompañamiento como un ingrediente base para muchos platos."
+      },
+      {
+        "title": "Gochujang: La Pasta del Alma",
+        "icon": "BookOpen",
+        "content": "El gochujang es una pasta fermentada hecha de chiles rojos, arroz glutinoso, semillas de soja fermentadas y sal. Su sabor es complejo: picante, dulce, salado y umami a la vez. Es indispensable en platos como bibimbap, tteokbokki y marinados para carne."
+      },
+      {
+        "title": "Arroz de Grano Corto: La Base Perfecta",
+        "icon": "Target",
+        "content": "El arroz coreano tradicional es de grano corto, más pegajoso que el arroz de grano largo. Se cocina típicamente en olla arrocera o en olla tradicional de barro (dolsot). Su textura permite que se forme una costra dorada en el fondo, muy apreciada en la cocina coreana."
+      },
+      {
+        "title": "Korean BBQ: El Arte de la Parrilla",
+        "icon": "Layers",
+        "listItems": [
+          "Se usa parrilla de gas o carbón con rejilla metálica",
+          "Las carnes se marinan previamente con ingredientes como soy sauce, pera y ajo",
+          "La carne se corta en trozos pequeños para cocción rápida y uniforme",
+          "Se acompaña con banchan (pequeños platos de acompañamiento)",
+          "Cada comensal cocina su propia porción en la mesa"
+        ]
+      },
+      {
+        "title": "Técnicas Esenciales",
+        "icon": "BarChart",
+        "listItems": [
+          "El kimchi mejora con el tiempo: mínimo 3 días de fermentación",
+          "El gochujang se puede diluir con aceite de sésamo para salsas",
+          "El arroz se lava hasta que el agua salga clara antes de cocinar",
+          "Para Korean BBQ, precalienta bien la parrilla antes de cocinar",
+          "Los sabores coreanos equilibran dulce, salado, picante y ácido"
+        ]
+      }
+    ]
+  }
+} 

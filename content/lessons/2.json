@@ -1,30 +1,42 @@
 {
   "context": {
-    "introduction": "En esta lección avanzaremos hacia conceptos más complejos. Antes de sumergirte en los desafíos, te presentamos información clave para entender mejor el tema.",
+    "introduction": "¡Descubre los secretos de la cocina mexicana! En esta lección explorarás los ingredientes fundamentales, técnicas tradicionales y herramientas esenciales que han definido una de las gastronomías más ricas y diversas del mundo.",
     "sections": [
       {
-        "title": "Tema Principal",
+        "title": "Las Salsas: El Alma de México",
+        "icon": "Sparkles",
+        "content": "Las salsas mexicanas tienen como base principal el tomate, ya sea tomate rojo (jitomate) o tomate verde (tomatillo). Estos se combinan con chiles, cebolla, ajo y especias para crear infinitas variaciones. Cada región tiene sus propias salsas tradicionales que acompañan desde tacos hasta platillos complejos."
+      },
+      {
+        "title": "Los Chiles: Diversidad de Sabores",
         "icon": "BookOpen",
-        "content": "Esta lección se enfoca en técnicas avanzadas y su aplicación en escenarios reales. Estos conocimientos te permitirán resolver problemas más complejos."
+        "content": "México tiene más de 60 variedades de chiles. El poblano es uno de los más versátiles y populares para principiantes, ya que ofrece sabor profundo con calor moderado. Se usa fresco en rajas, relleno o seco (chile ancho) para moles y salsas."
       },
       {
-        "title": "Objetivos de Aprendizaje",
+        "title": "Masa de Maíz: La Base Ancestral",
         "icon": "Target",
-        "content": "Dominar conceptos avanzados y aplicarlos correctamente. Desarrollar la capacidad de análisis para identificar la mejor solución en diferentes contextos."
+        "content": "Las tortillas tradicionales se hacen con masa de maíz nixtamalizado, no con harina de trigo. El proceso de nixtamalización (cocinar el maíz con cal) mejora el sabor, la textura y el valor nutricional. Esta masa se usa para tortillas, tamales, sopes y muchos otros antojitos mexicanos."
       },
       {
-        "title": "Estructura de la Lección",
-        "icon": "ListChecks",
-        "content": "La lección está organizada en una serie de desafíos progresivos que te ayudarán a construir tu conocimiento paso a paso, desde lo básico hasta aplicaciones más complejas."
-      },
-      {
-        "title": "Recomendaciones",
-        "icon": "LightbulbIcon",
+        "title": "El Comal: Herramienta Esencial",
+        "icon": "Layers",
         "listItems": [
-          "Analiza cuidadosamente todas las opciones antes de elegir",
-          "Recuerda los conceptos aprendidos en la lección anterior",
-          "Busca patrones recurrentes en las preguntas",
-          "Si cometes un error, reflexiona sobre el porqué antes de continuar"
+          "El comal es una plancha circular tradicionalmente de barro o metal",
+          "Se usa para cocer tortillas, tostar chiles y especias",
+          "Debe calentarse gradualmente para evitar que se quiebre",
+          "Un comal bien curado no necesita aceite para cocinar tortillas",
+          "También sirve para asar verduras y darles el sabor característico"
+        ]
+      },
+      {
+        "title": "Técnicas Tradicionales",
+        "icon": "BarChart",
+        "listItems": [
+          "Tuesta los tomates y chiles directamente en el comal para mejor sabor",
+          "La masa debe tener consistencia suave pero no pegajosa",
+          "Las tortillas se cocinan sin aceite, solo en comal caliente",
+          "Los chiles poblanos se pueden asar para pelar fácilmente",
+          "Cada salsa tiene su molcajete ideal para lograr la textura perfecta"
         ]
       }
     ]

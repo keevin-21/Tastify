@@ -1,43 +1,42 @@
 {
   "context": {
-    "introduction": "In this lesson, you will learn the basic fundamentals of cooking. Before starting with the questions, it's important to understand the cutting techniques, temperatures, and cooking methods that every chef must master.",
+    "introduction": "¡Bienvenido a los fundamentos de la cocina japonesa! En esta lección aprenderás sobre los pilares esenciales que definen la gastronomía japonesa: el umami, los ingredientes básicos y las técnicas de preparación más importantes.",
     "sections": [
       {
-        "title": "Cutting Techniques",
-        "icon": "BookOpen",
-        "content": "Basic cuts are fundamental in professional cooking. You'll learn about brunoise (small 1-3mm cube cuts), julienne (thin strips), chiffonade (thin strips for leaves), and dice (1-2cm cubes). Precision in these cuts not only improves presentation but also ensures even cooking."
+        "title": "El Umami: El Quinto Sabor",
+        "icon": "Sparkles",
+        "content": "El umami es el componente de sabor más importante en la cocina japonesa. Descubierto por el científico japonés Kikunae Ikeda en 1908, este 'quinto sabor' se caracteriza por ser sabroso, profundo y satisfactorio. Se encuentra naturalmente en ingredientes como kombu, katsuobushi (bonito seco) y shiitake."
       },
       {
-        "title": "Cooking Methods",
+        "title": "Dashi: La Base de Todo",
         "icon": "Layers",
-        "content": "We'll master both moist and dry cooking methods. In moist methods, we'll cover boiling, poaching, and steaming. In dry methods, you'll learn about roasting, baking, and sautéing. Each method affects ingredients and their nutrients differently."
+        "content": "El dashi es el caldo fundamental que da vida a la cocina japonesa. Se prepara principalmente con kombu (alga marina) y katsuobushi. El kombu aporta minerales y un umami profundo, mientras que el katsuobushi añade notas ahumadas. Este caldo es la base de sopas, salsas y muchos platos tradicionales."
       },
       {
-        "title": "Temperatures and Times",
+        "title": "Preparación del Arroz para Sushi",
         "icon": "Target",
+        "content": "El arroz de sushi (shari) requiere una preparación especial. Después de cocinar el arroz japonés de grano corto, se mezcla cuidadosamente con vinagre de arroz (su), azúcar y sal mientras está caliente. Esta mezcla debe enfriarse a temperatura corporal para lograr la textura perfecta."
+      },
+      {
+        "title": "Tempura: El Arte de la Fritura",
+        "icon": "BookOpen",
         "listItems": [
-          "Slow cooking: 85-96°C (185-205°F), ideal for stews and sauces",
-          "Water boiling point: 100°C (212°F) at sea level",
-          "Cake baking: 180-190°C (350-375°F) for 25-35 minutes",
-          "Meat searing: 200-230°C (390-450°F) for 2-3 minutes per side",
-          "Steam cooking: 100°C (212°F), maintains nutrients and textures"
+          "La tempura se cocina por fritura profunda en aceite a 170-180°C",
+          "La masa debe estar fría y poco mezclada para lograr textura crujiente",
+          "Se usa agua helada y harina de bajo gluten",
+          "Los ingredientes deben estar secos antes de rebozar",
+          "El tiempo de cocción es crucial: pocos minutos para mantener los ingredientes tiernos"
         ]
       },
       {
-        "title": "Practical Tips",
+        "title": "Consejos para el Éxito",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Always preheat the oven before baking",
-          "Sharp knives are safer than dull ones",
-          "Use a stable, non-slip cutting board",
-          "Mise en place (advance preparation) is crucial",
-          "Test oil temperature with a pinch of flour: if it bubbles gently, it's ready"
+          "El umami se potencia combinando diferentes fuentes como kombu y hongos",
+          "Nunca hiervas el kombu, solo remójalo en agua tibia",
+          "El vinagre de arroz debe mezclarse cuando el arroz está caliente",
+          "Para tempura perfecta, mantén la masa fría y el aceite a temperatura constante"
         ]
-      },
-      {
-        "title": "Key Safety Points",
-        "icon": "ListChecks",
-        "content": "Kitchen safety is paramount. Proteins like chicken must reach an internal temperature of 74°C (165°F), beef can vary according to desired doneness (63°C/145°F for medium). Always use separate cutting boards for raw meats and vegetables."
       }
     ]
   }
