@@ -20,9 +20,9 @@ export const Challenge = ({
 }: Props) =>{
     return (
         <div className={cn(
-            "grid gap-2",
+            "grid gap-4",
             type === "ASSIST" && "grid-cols-1",
-            type === "SELECT" && "grid-cols-2 lg:grid-cols-[repeat(auto-fit, minmax(0,1fr))]",
+            type === "SELECT" && "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 max-w-2xl mx-auto",
         )}>
             {options.map((option, i) => (
                 <Card

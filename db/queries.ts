@@ -244,7 +244,7 @@ export const getLeaderboardUsers = cache(async () => {
     try {
         const data = await db.query.userProgress.findMany({
             orderBy: (userProgress, { desc }) => [desc(userProgress.points)],
-            limit: 10,
+            limit: 20, // Get more records to account for potential duplicates
             columns: {
                 userId: true,
                 userName: true,
@@ -261,10 +261,21 @@ export const getLeaderboardUsers = cache(async () => {
             },
         });
 
-        // Ensure no duplicates by filtering unique userIds
-        const uniqueUsers = data.filter((user, index, array) => 
-            array.findIndex(u => u.userId === user.userId) === index
-        );
+        // Create a Map to ensure unique users and keep highest points
+        const uniqueUsersMap = new Map();
+        
+        data.forEach(user => {
+            const existingUser = uniqueUsersMap.get(user.userId);
+            // Keep the user with higher points or the first one if points are equal
+            if (!existingUser || user.points > existingUser.points) {
+                uniqueUsersMap.set(user.userId, user);
+            }
+        });
+
+        // Convert back to array and sort by points, then limit to 10
+        const uniqueUsers = Array.from(uniqueUsersMap.values())
+            .sort((a, b) => b.points - a.points)
+            .slice(0, 10);
 
         return uniqueUsers;
     } catch (error) {

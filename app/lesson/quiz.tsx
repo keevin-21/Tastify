@@ -16,6 +16,7 @@ import { useRouter } from "next/navigation";
 import Confetti from "react-confetti";
 import { useHeartsModal } from "@/store/use-hearts-modal";
 import { usePracticeModal } from "@/store/use-practice-modal";
+import { cn } from "@/lib/utils";
 
 type Props = {
     initialPercent: number;
@@ -206,12 +207,26 @@ export const Quiz = ({
             />
 
             <div className="flex-1">
-                <div className="h-full flex items-center justify-center">
-                    <div className="lg:min-h-[350px] lg:w-[600px] w-full px-6 lg:px-0 flex flex-col gap-y-12 bg-[#232323] rounded-xl shadow-lg border-2 border-[#2c2c2c]">
-                        <h1 className="text-lg lg:text-3xl text-center lg:text-start font-bold text-[#f5f5f5]">
-                            {title}
-                        </h1>
-                        <div>
+                <div className="h-full flex items-center justify-center py-8">
+                    <div className={cn(
+                        "lg:min-h-[350px] lg:w-[600px] w-full px-6 lg:px-0 flex flex-col bg-[#232323] rounded-xl shadow-lg border-2 border-[#2c2c2c]",
+                        currentChallenge.type === "SELECT" ? "gap-y-8 py-8" : "gap-y-12"
+                    )}>
+                        {currentChallenge.type === "SELECT" ? (
+                            <div className="text-center py-4">
+                                <h1 className="text-xl lg:text-3xl font-bold text-[#f5f5f5] mb-2">
+                                    {title}
+                                </h1>
+                                <div className="w-16 h-1 bg-[#FF6F1F] mx-auto rounded-full"></div>
+                            </div>
+                        ) : (
+                            <h1 className="text-lg lg:text-3xl text-center lg:text-start font-bold text-[#f5f5f5]">
+                                {title}
+                            </h1>
+                        )}
+                        <div className={cn(
+                            currentChallenge.type === "SELECT" && "px-4 lg:px-8"
+                        )}>
                             {currentChallenge.type === "ASSIST" && (
                                 <QuestionBubble  question={currentChallenge.question} />
                             )}

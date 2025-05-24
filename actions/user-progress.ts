@@ -8,6 +8,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { eq, and } from "drizzle-orm";
 import { POINTS_TO_REFILL } from "@/constants";
+import { generateUniqueUsername } from "@/lib/user-utils";
 
 export const upsertUserProgress = async (courseId: number) => {
     const { userId } = await auth();
@@ -32,21 +33,23 @@ export const upsertUserProgress = async (courseId: number) => {
     if (existingUserProgress) {
         await db.update(userProgress).set({
             activeCourseId: courseId,
-            userName: user.firstName || "User",
-            userImageSrc: user.imageUrl || "/mascot.png" // change to a "default user image"
-        });
+        }).where(eq(userProgress.userId, userId));
 
         revalidatePath("/courses");
         revalidatePath("/learn");
         revalidatePath("/leaderboard");
         redirect("/learn")
-    };
+    }
+
+    // Generate a unique username for new users
+    const baseUsername = user.firstName || user.username || "User";
+    const uniqueUsername = await generateUniqueUsername(baseUsername, userId);
 
     await db.insert(userProgress).values({
         userId,
         activeCourseId: courseId,
-        userName: user.firstName || "User",
-        userImageSrc: user.imageUrl || "/mascot.png" // change to a "default user image"
+        userName: uniqueUsername,
+        userImageSrc: user.imageUrl || "/mascot.png"
     });
 
     revalidatePath("/courses");
