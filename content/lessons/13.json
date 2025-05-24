@@ -1,0 +1,31 @@
+{
+  "context": {
+    "introduction": "Master the art of cooking pasta perfectly. Learn the essential techniques that separate good pasta from great pasta.",
+    "sections": [
+      {
+        "title": "The Perfect Texture",
+        "icon": "Target",
+        "content": "Italian pasta has a specific texture that's firm yet tender. This balance takes practice and attention to timing."
+      },
+      {
+        "title": "Water Preparation",
+        "icon": "Sparkles", 
+        "content": "The water you cook pasta in affects the final result. The amount of salt matters more than you might think."
+      },
+      {
+        "title": "Common Mistakes",
+        "icon": "BookOpen",
+        "content": "Many home cooks add ingredients to pasta water that actually work against achieving perfect results."
+      },
+      {
+        "title": "Pro Tips",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Test your pasta before the package time suggests",
+          "The pasta water becomes part of your sauce",
+          "Timing is everything - pasta waits for no one"
+        ]
+      }
+    ]
+  }
+} 

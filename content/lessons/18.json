@@ -1,0 +1,31 @@
+{
+  "context": {
+    "introduction": "Learn fundamental Korean cooking techniques that create the perfect balance of flavors and textures.",
+    "sections": [
+      {
+        "title": "Cooking Methods",
+        "icon": "Sparkles",
+        "content": "Korean cuisine uses specific cooking techniques that bring out the best in each ingredient."
+      },
+      {
+        "title": "Knife Skills",
+        "icon": "Target",
+        "content": "How you cut vegetables affects both cooking time and final presentation in Korean dishes."
+      },
+      {
+        "title": "Flavor Balance",
+        "icon": "BookOpen",
+        "content": "Korean cooking seeks harmony between different taste elements to create satisfying meals."
+      },
+      {
+        "title": "Essential Oils",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Different oils bring different flavors to dishes",
+          "Cutting techniques affect cooking results",
+          "Balance creates the signature Korean taste profile"
+        ]
+      }
+    ]
+  }
+} 

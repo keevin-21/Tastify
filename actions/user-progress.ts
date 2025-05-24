@@ -38,6 +38,7 @@ export const upsertUserProgress = async (courseId: number) => {
 
         revalidatePath("/courses");
         revalidatePath("/learn");
+        revalidatePath("/leaderboard");
         redirect("/learn")
     };
 
@@ -50,6 +51,7 @@ export const upsertUserProgress = async (courseId: number) => {
 
     revalidatePath("/courses");
     revalidatePath("/learn");
+    revalidatePath("/leaderboard");
     redirect("/learn")
 };
 

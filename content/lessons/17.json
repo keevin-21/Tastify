@@ -1,0 +1,31 @@
+{
+  "context": {
+    "introduction": "Master Korean cooking tools and rice preparation. The right equipment and techniques make all the difference.",
+    "sections": [
+      {
+        "title": "Rice Varieties",
+        "icon": "Target",
+        "content": "Korean cuisine uses specific rice types that create the perfect texture for traditional dishes."
+      },
+      {
+        "title": "Cooking Equipment",
+        "icon": "Sparkles",
+        "content": "Korean cooking uses specialized tools that help achieve authentic flavors and cooking methods."
+      },
+      {
+        "title": "Rice Preparation",
+        "icon": "BookOpen",
+        "content": "Proper rice washing and preparation is fundamental to Korean cooking success."
+      },
+      {
+        "title": "Traditional Vessels",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Stone bowls retain heat and create special textures",
+          "Proper rice washing affects the final result",
+          "Different cooking methods suit different dishes"
+        ]
+      }
+    ]
+  }
+} 

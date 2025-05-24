@@ -1,0 +1,31 @@
+{
+  "context": {
+    "introduction": "Learn to create and present classic Italian dishes. From simple appetizers to perfect pizza, presentation matters.",
+    "sections": [
+      {
+        "title": "Classic Starters",
+        "icon": "Sparkles",
+        "content": "Italian meals often begin with simple, flavorful appetizers that awaken the palate."
+      },
+      {
+        "title": "Serving Temperature",
+        "icon": "Target", 
+        "content": "Italian dishes are best enjoyed at their intended temperature. This affects both taste and texture."
+      },
+      {
+        "title": "Traditional Toppings",
+        "icon": "BookOpen",
+        "content": "Authentic Italian dishes use specific combinations that have stood the test of time."
+      },
+      {
+        "title": "Presentation Tips",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Italian food celebrates natural beauty",
+          "Color and freshness speak volumes",
+          "Traditional combinations exist for good reasons"
+        ]
+      }
+    ]
+  }
+} 

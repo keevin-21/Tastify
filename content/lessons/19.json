@@ -1,0 +1,31 @@
+{
+  "context": {
+    "introduction": "Explore the art of Korean marinades and grilled meats. Learn how time and ingredients create tender, flavorful dishes.",
+    "sections": [
+      {
+        "title": "Natural Tenderizers",
+        "icon": "Target",
+        "content": "Korean marinades often include natural ingredients that help break down tough meat fibers."
+      },
+      {
+        "title": "Marination Time",
+        "icon": "Sparkles", 
+        "content": "Proper marination requires patience. The right timing develops flavor while ensuring tenderness."
+      },
+      {
+        "title": "Name Origins",
+        "icon": "BookOpen",
+        "content": "Korean dish names often describe the cooking method or main characteristic of the food."
+      },
+      {
+        "title": "Meat Selection",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Different cuts work better for different Korean dishes",
+          "Marbling affects both flavor and cooking time",
+          "Traditional ingredients create authentic taste"
+        ]
+      }
+    ]
+  }
+} 

@@ -1,0 +1,31 @@
+{
+  "context": {
+    "introduction": "Discover the heart of Korean cooking through fermentation and essential ingredients that create bold, complex flavors.",
+    "sections": [
+      {
+        "title": "Fermented Treasures",
+        "icon": "Sparkles",
+        "content": "Korean cuisine celebrates fermented foods that develop deep, complex flavors over time."
+      },
+      {
+        "title": "Color and Heat",
+        "icon": "Target",
+        "content": "Korean dishes are known for their vibrant colors and balanced heat from special pastes and ingredients."
+      },
+      {
+        "title": "Traditional Vegetables",
+        "icon": "BookOpen", 
+        "content": "Certain vegetables form the foundation of Korean fermented foods, chosen for their texture and flavor potential."
+      },
+      {
+        "title": "Fermentation Basics",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Good fermentation takes patience and time",
+          "Traditional ingredients create the best flavors", 
+          "Proper timing develops the right taste and texture"
+        ]
+      }
+    ]
+  }
+} 

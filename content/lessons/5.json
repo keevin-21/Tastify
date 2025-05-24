@@ -1,0 +1,44 @@
+{
+  "context": {
+    "introduction": "Advance your Mexican culinary skills! Explore traditional cooking methods, regional techniques, and the ancient tools that give Mexican cuisine its distinctive character and deep, complex flavors.",
+    "sections": [
+      {
+        "title": "Molcajete: The Ancient Mortar",
+        "icon": "Sparkles",
+        "content": "The molcajete is a traditional mortar made from volcanic basalt stone, used for over 6,000 years. Its rough surface breaks down ingredients while releasing essential oils and creating unique textures impossible to achieve with modern blenders. A well-seasoned molcajete imparts a subtle mineral flavor that enhances salsas and spice pastes."
+      },
+      {
+        "title": "Charring Techniques: Building Flavor",
+        "icon": "Target",
+        "content": "Charring vegetables directly over flame or on a comal creates the foundation of Mexican flavor. This technique caramelizes natural sugars while adding smoky depth to tomatoes, onions, garlic, and chiles. The slight bitterness from charring balances the heat and acidity in traditional salsas."
+      },
+      {
+        "title": "Mole: The Crown Jewel",
+        "icon": "BookOpen",
+        "content": "Mole is Mexico's most complex sauce, often containing 20+ ingredients including various chiles, nuts, seeds, spices, and chocolate. Each region has its signature mole, with Oaxaca alone boasting seven traditional varieties. The preparation can take days, with each ingredient carefully toasted and ground to create layers of flavor."
+      },
+      {
+        "title": "Barbacoa: Underground Cooking",
+        "icon": "Layers",
+        "listItems": [
+          "Traditional barbacoa uses underground earth ovens (hornos de tierra)",
+          "Meat is wrapped in maguey (agave) leaves for moisture and flavor",
+          "Cooking time ranges from 8-12 hours at low, steady heat",
+          "The technique dates back to pre-Hispanic civilizations",
+          "Modern adaptations use specialized above-ground ovens or pressure cooking"
+        ]
+      },
+      {
+        "title": "Regional Mastery Tips",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Season your molcajete by grinding rice and salt until the rice comes out white",
+          "Char ingredients until they have black spots but aren't completely burned",
+          "Toast mole ingredients in specific order: chiles first, nuts and seeds last",
+          "For barbacoa flavor at home, use banana leaves and slow-cooking methods",
+          "Each mole ingredient should be perfectly toasted - this determines the final flavor"
+        ]
+      }
+    ]
+  }
+} 

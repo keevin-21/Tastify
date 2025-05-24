@@ -1,0 +1,38 @@
+{
+  "context": {
+    "introduction": "Master the sophisticated techniques of regional Italian cuisine! Explore time-honored preparations, premium ingredients, and advanced cooking methods that represent the pinnacle of Italian culinary artistry.",
+    "sections": [
+      {
+        "title": "Bolognese: The 4-Hour Symphony",
+        "icon": "Sparkles",
+        "content": "Authentic Ragù Bolognese requires patience and precision. Registered with Bologna's Chamber of Commerce, the official recipe demands 4+ hours of gentle simmering. The sauce layers flavors gradually: soffritto base, ground meats, wine reduction, tomatoes, and milk for richness. Each element must cook completely before adding the next."
+      },
+      {
+        "title": "Modena: Balsamic Excellence",
+        "icon": "Target",
+        "content": "True Aceto Balsamico Tradizionale di Modena is aged a minimum of 12 years in wooden barrels, developing complex sweetness and acidity. The production process is tightly regulated, using only Trebbiano and Lambrusco grapes. This liquid gold transforms simple dishes into extraordinary experiences with just a few precious drops."
+      },
+      {
+        "title": "Osso Buco: Milanese Masterpiece",
+        "icon": "BookOpen",
+        "content": "Osso Buco alla Milanese showcases the technique of braising - slowly cooking veal shanks in white wine with vegetables until fork-tender. The marrow in the bone ('osso buco' means 'bone with a hole') adds richness, while gremolata (lemon zest, garlic, parsley) provides brightness to finish."
+      },
+      {
+        "title": "Carpaccio: Paper-Thin Precision",
+        "icon": "Layers",
+        "content": "Carpaccio requires masterful knife skills to create paper-thin slices of raw beef. The meat must be partially frozen for easier cutting, sliced against the grain, and pounded gently between plastic wrap. Named after Renaissance painter Vittore Carpaccio, this dish celebrates the purity of exceptional ingredients."
+      },
+      {
+        "title": "Advanced Mastery Techniques",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "For perfect Bolognese, cook each ingredient fully before adding the next",
+          "Age balsamic vinegar substitutes cannot replace the authentic Modena product",
+          "Osso Buco should be braised until the meat falls from the bone",
+          "Carpaccio beef should be frozen for 30 minutes before slicing",
+          "Master the Italian principle: 'Few ingredients, perfect execution'"
+        ]
+      }
+    ]
+  }
+} 

@@ -233,7 +233,7 @@ export const getUserSubscription = cache(async () => {
     }
 });
 
-// top 10 users
+// top 10 users - Global leaderboard across all courses
 export const getLeaderboardUsers = cache(async () => {
     const { userId } = await auth();
 
@@ -241,16 +241,34 @@ export const getLeaderboardUsers = cache(async () => {
         return [];
     }
 
-    const data = await db.query.userProgress.findMany({
-        orderBy: (userProgress, { desc }) => [desc(userProgress.points)],
-        limit: 10,
-        columns: {
-            userId: true,
-            userName: true,
-            userImageSrc: true,
-            points: true,
-        },
-    });
+    try {
+        const data = await db.query.userProgress.findMany({
+            orderBy: (userProgress, { desc }) => [desc(userProgress.points)],
+            limit: 10,
+            columns: {
+                userId: true,
+                userName: true,
+                userImageSrc: true,
+                points: true,
+            },
+            with: {
+                activeCourse: {
+                    columns: {
+                        title: true,
+                        imageSrc: true,
+                    },
+                },
+            },
+        });
 
-    return data;
+        // Ensure no duplicates by filtering unique userIds
+        const uniqueUsers = data.filter((user, index, array) => 
+            array.findIndex(u => u.userId === user.userId) === index
+        );
+
+        return uniqueUsers;
+    } catch (error) {
+        console.error("Error fetching leaderboard users:", error);
+        return [];
+    }
 });

@@ -1,36 +1,44 @@
 {
   "context": {
-    "introduction": "¡Benvenuti alla cucina italiana! En esta lección descubrirás los pilares fundamentales de la auténtica cocina italiana: ingredientes de calidad, técnicas tradicionales y la importancia de la simplicidad que ha conquistado el mundo.",
+    "introduction": "Master the pinnacle of Japanese culinary artistry! This advanced lesson explores the sophisticated world of kaiseki cuisine, traditional presentations, and the philosophical underpinnings that elevate Japanese cooking to an art form.",
     "sections": [
       {
-        "title": "Aceite de Oliva Extra Virgen: Oro Líquido",
+        "title": "Kaiseki: The Ultimate Culinary Experience",
         "icon": "Sparkles",
-        "content": "El aceite de oliva extra virgen es el corazón de la cocina italiana. Se obtiene mediante prensado en frío y conserva todos los antioxidantes y sabores del fruto. Su uso va desde aliñar ensaladas hasta cocinar a fuego medio. Cada región italiana produce aceites con características únicas."
+        "content": "Kaiseki represents the highest form of Japanese cuisine, originally developed for the tea ceremony. This multi-course meal emphasizes seasonal ingredients, harmony of flavors, colors, and textures. Each dish is carefully planned to create a progression that tells the story of the season while balancing taste, nutrition, and visual beauty."
       },
       {
-        "title": "La Albahaca: Aroma del Mediterráneo",
-        "icon": "Layers",
-        "content": "La albahaca fresca es indispensable en la cocina italiana, especialmente en salsas de pasta como el pesto genovés y la salsa marinara. Sus hojas deben añadirse al final de la cocción para preservar su aroma delicado. La variedad 'Genovese' es considerada la mejor para uso culinario."
-      },
-      {
-        "title": "Al Dente: La Perfección en la Pasta",
+        "title": "Sushi Rice Aging Techniques",
         "icon": "Target",
-        "content": "Cocinar la pasta 'al dente' significa lograr una textura firme pero no dura. La pasta debe ofrecer una ligera resistencia al morderla. Esto se logra cocinando 1-2 minutos menos del tiempo indicado en el paquete y terminando la cocción en la sartén con la salsa."
+        "content": "Master sushi chefs employ sophisticated aging techniques for sushi rice. The rice is prepared with precise vinegar mixtures and allowed to reach body temperature through controlled cooling. Some high-end establishments age their rice up to 24 hours, developing complex flavors and perfect texture through careful temperature and humidity control."
       },
       {
-        "title": "Pecorino Romano: El Rey de los Quesos",
+        "title": "Moritsuke: The Art of Presentation",
         "icon": "BookOpen",
-        "content": "El Pecorino Romano es el queso tradicional para la auténtica Carbonara romana. Este queso de oveja, curado y salado, aporta un sabor intenso y picante que se derrite perfectamente con el calor de la pasta y los huevos, creando una crema sedosa sin necesidad de nata."
+        "content": "Moritsuke is the Japanese art of food arrangement that transforms dishes into visual poetry. It follows principles of asymmetrical balance, seasonal representation, and negative space utilization. Every element—from plate selection to ingredient placement—is deliberate, creating harmony between food, vessel, and natural beauty."
       },
       {
-        "title": "Secretos de la Tradición",
+        "title": "Kaiseki Philosophy & Structure",
+        "icon": "Layers",
+        "listItems": [
+          "Sakizuke (appetizer): Sets the seasonal tone",
+          "Wanmono (clear soup): Cleanses the palate", 
+          "Sashimi: Showcases the finest seasonal fish",
+          "Yakimono (grilled dish): Demonstrates cooking mastery",
+          "Nimono (simmered dish): Reveals ingredient harmony",
+          "Takiawase (mixed vegetables): Celebrates seasonal produce",
+          "Gohan (rice dish): Provides satisfying conclusion"
+        ]
+      },
+      {
+        "title": "Advanced Mastery Principles",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Usa siempre aceite de oliva extra virgen de primera presión en frío",
-          "La albahaca nunca se corta con cuchillo, solo se rasga con las manos",
-          "Prueba la pasta 2 minutos antes del tiempo indicado",
-          "El Pecorino Romano debe rallarse fino y añadirse fuera del fuego",
-          "La simplicidad es clave: pocos ingredientes, pero de la mejor calidad"
+          "Each kaiseki course should reflect the exact season and weather",
+          "Use odd numbers in plating for visual balance and natural harmony",
+          "Master the five cooking methods: raw, simmered, grilled, steamed, and fried",
+          "Practice 'omotenashi' - hospitality that anticipates guests' needs before they know them",
+          "Study traditional poetry and art to understand seasonal symbolism in food presentation"
         ]
       }
     ]

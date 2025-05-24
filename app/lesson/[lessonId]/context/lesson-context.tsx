@@ -111,10 +111,10 @@ export const LessonContext = ({
             >
               {isReady ? (
                 <Link href={`/lesson/${lessonId}`} className="flex items-center">
-                  Comenzar lección
+                  Start lesson
                 </Link>
               ) : (
-                "Estoy listo"
+                "I'm ready!"
               )}
             </Button>
           </motion.div>

@@ -1,0 +1,31 @@
+{
+  "context": {
+    "introduction": "Discover Korean side dishes and classic meals. Learn about the variety and balance that defines Korean dining.",
+    "sections": [
+      {
+        "title": "Side Dish Culture",
+        "icon": "Sparkles",
+        "content": "Korean meals feature multiple small dishes that complement the main course and add variety."
+      },
+      {
+        "title": "Traditional Soups",
+        "icon": "Target",
+        "content": "Korean soups range from simple broths to hearty stews, each serving different purposes in the meal."
+      },
+      {
+        "title": "Mixed Dishes",
+        "icon": "BookOpen",
+        "content": "Some Korean dishes combine multiple ingredients in one bowl, creating balanced, complete meals."
+      },
+      {
+        "title": "Meal Balance",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Korean meals aim for variety and balance",
+          "Traditional names often describe the dish's essence",
+          "Side dishes are served in specific quantities"
+        ]
+      }
+    ]
+  }
+} 

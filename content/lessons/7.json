@@ -1,0 +1,38 @@
+{
+  "context": {
+    "introduction": "Benvenuti alla vera cucina italiana! Discover the fundamental ingredients and techniques that form the foundation of authentic Italian cooking - where simplicity meets perfection through quality and tradition.",
+    "sections": [
+      {
+        "title": "Extra Virgin Olive Oil: Liquid Gold",
+        "icon": "Sparkles",
+        "content": "Extra virgin olive oil is the heart and soul of Italian cuisine. Made from the first cold pressing of olives, it retains maximum flavor, nutrients, and antioxidants. Each region produces oils with distinct characteristics - from the peppery Tuscan varieties to the mild, fruity oils of Liguria. Quality oil transforms even the simplest dish into something extraordinary."
+      },
+      {
+        "title": "Basilico: The King of Herbs",
+        "icon": "Layers",
+        "content": "Fresh basil, particularly the 'Genovese' variety, is sacred in Italian cooking. Its sweet, peppery fragrance is essential for authentic pesto, margherita pizza, and countless pasta dishes. Italian cooks never cut basil with a knife - only tear it by hand to prevent bruising and preserve its delicate oils."
+      },
+      {
+        "title": "Al Dente: The Perfect Bite",
+        "icon": "Target",
+        "content": "Cooking pasta al dente ('to the tooth') means achieving the perfect texture - firm but not hard, with a slight resistance when bitten. This technique ensures the pasta can absorb sauce properly while maintaining its structure. Test pasta 1-2 minutes before the package time and finish cooking in the sauce."
+      },
+      {
+        "title": "Pecorino Romano: The Traditional Choice",
+        "icon": "BookOpen",
+        "content": "Pecorino Romano is the authentic cheese for Roman classics like Carbonara and Cacio e Pepe. Made from sheep's milk and aged for at least 8 months, it delivers a sharp, salty, and slightly spicy flavor that melts beautifully with pasta water and heat to create silky sauces without cream."
+      },
+      {
+        "title": "Italian Fundamentals",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Taste your olive oil - it should be fruity with a peppery finish",
+          "Never wash basil - gently wipe leaves with a damp paper towel",
+          "Save pasta cooking water - its starch content helps bind sauces",
+          "Grate Pecorino Romano fresh and mix off heat to prevent clumping",
+          "Quality over quantity - use fewer, better ingredients for authentic flavors"
+        ]
+      }
+    ]
+  }
+} 

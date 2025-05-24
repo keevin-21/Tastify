@@ -1,42 +1,42 @@
 {
   "context": {
-    "introduction": "¡안녕하세요! (Annyeonghaseyo!) Bienvenido a los fundamentos de la cocina coreana. En esta lección descubrirás los ingredientes esenciales, técnicas de fermentación y métodos de cocción que hacen única a esta fascinante gastronomía.",
+    "introduction": "¡Bienvenidos a la cocina mexicana! Discover the essential foundations of Mexican cuisine - from the vibrant world of salsas to traditional cooking tools that have shaped one of the world's most beloved culinary traditions.",
     "sections": [
       {
-        "title": "Kimchi: El Tesoro Fermentado",
+        "title": "Salsas: The Heart of Mexican Cuisine",
         "icon": "Sparkles",
-        "content": "El kimchi es el vegetal fermentado más emblemático de Corea, tradicionalmente hecho con col napa. Este súper alimento se fermenta con sal, gochugaru (chile en polvo), ajo, jengibre y otros condimentos. Rico en probióticos, es tanto un acompañamiento como un ingrediente base para muchos platos."
+        "content": "Salsas are the soul of Mexican cooking, with tomatoes (jitomate and tomatillo) forming the base of most recipes. These versatile sauces combine fresh or roasted tomatoes with chiles, onions, garlic, and herbs to create countless regional variations. Each salsa tells the story of its region and family traditions."
       },
       {
-        "title": "Gochujang: La Pasta del Alma",
+        "title": "Chile Poblano: The Gentle Giant",
         "icon": "BookOpen",
-        "content": "El gochujang es una pasta fermentada hecha de chiles rojos, arroz glutinoso, semillas de soja fermentadas y sal. Su sabor es complejo: picante, dulce, salado y umami a la vez. Es indispensable en platos como bibimbap, tteokbokki y marinados para carne."
+        "content": "The poblano chile is perfect for beginners, offering rich, earthy flavors with mild to moderate heat (1,000-2,000 Scoville units). When fresh, it's ideal for chiles rellenos and rajas. When dried, it becomes the chile ancho, essential for complex moles and sophisticated sauces."
       },
       {
-        "title": "Arroz de Grano Corto: La Base Perfecta",
+        "title": "Masa de Maíz: Ancient Grain, Modern Kitchen",
         "icon": "Target",
-        "content": "El arroz coreano tradicional es de grano corto, más pegajoso que el arroz de grano largo. Se cocina típicamente en olla arrocera o en olla tradicional de barro (dolsot). Su textura permite que se forme una costra dorada en el fondo, muy apreciada en la cocina coreana."
+        "content": "Corn masa is created through nixtamalización - an ancient Mesoamerican process where corn is cooked with lime (cal). This process improves nutritional value, flavor, and workability. Fresh masa creates the perfect tortillas, tamales, and countless antojitos that define Mexican street food."
       },
       {
-        "title": "Korean BBQ: El Arte de la Parrilla",
+        "title": "El Comal: The Essential Griddle",
         "icon": "Layers",
         "listItems": [
-          "Se usa parrilla de gas o carbón con rejilla metálica",
-          "Las carnes se marinan previamente con ingredientes como soy sauce, pera y ajo",
-          "La carne se corta en trozos pequeños para cocción rápida y uniforme",
-          "Se acompaña con banchan (pequeños platos de acompañamiento)",
-          "Cada comensal cocina su propia porción en la mesa"
+          "Traditional comals are made from clay, cast iron, or carbon steel",
+          "Used for cooking tortillas, toasting spices, and charring vegetables",
+          "A well-seasoned comal develops a natural non-stick surface",
+          "Heat gradually to prevent cracking (especially clay comals)",
+          "The comal imparts a distinctive smoky flavor to ingredients"
         ]
       },
       {
-        "title": "Técnicas Esenciales",
-        "icon": "BarChart",
+        "title": "Fundamental Techniques",
+        "icon": "LightbulbIcon",
         "listItems": [
-          "El kimchi mejora con el tiempo: mínimo 3 días de fermentación",
-          "El gochujang se puede diluir con aceite de sésamo para salsas",
-          "El arroz se lava hasta que el agua salga clara antes de cocinar",
-          "Para Korean BBQ, precalienta bien la parrilla antes de cocinar",
-          "Los sabores coreanos equilibran dulce, salado, picante y ácido"
+          "Char tomatoes and tomatillos directly on the comal for deeper flavor",
+          "Toast dried chiles briefly to awaken their oils - don't burn them",
+          "Fresh masa should feel smooth and pliable, never sticky or dry",
+          "Season your comal with a light coating of oil and heat gradually",
+          "Practice the 'tortilla flip' - confidence is key to perfect tortillas"
         ]
       }
     ]

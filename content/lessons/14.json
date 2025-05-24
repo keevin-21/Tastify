@@ -1,0 +1,31 @@
+{
+  "context": {
+    "introduction": "Discover the building blocks of Italian flavor. Simple sauces and fresh herbs can transform any dish.",
+    "sections": [
+      {
+        "title": "Simplicity Rules",
+        "icon": "Sparkles",
+        "content": "The most elegant Italian sauces often have the fewest ingredients. Sometimes less truly is more."
+      },
+      {
+        "title": "Herb Timing",
+        "icon": "Target",
+        "content": "When you add herbs to your cooking can make the difference between bright flavor and dull taste."
+      },
+      {
+        "title": "Classic Combinations",
+        "icon": "BookOpen",
+        "content": "Certain herbs naturally complement specific ingredients. These partnerships have been perfected over generations."
+      },
+      {
+        "title": "Kitchen Wisdom",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Fresh herbs behave differently than dried ones",
+          "Some flavors develop better with heat, others without",
+          "The foundation ingredients matter most"
+        ]
+      }
+    ]
+  }
+} 

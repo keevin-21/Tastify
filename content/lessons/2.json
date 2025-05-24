@@ -1,42 +1,41 @@
 {
   "context": {
-    "introduction": "¡Descubre los secretos de la cocina mexicana! En esta lección explorarás los ingredientes fundamentales, técnicas tradicionales y herramientas esenciales que han definido una de las gastronomías más ricas y diversas del mundo.",
+    "introduction": "Welcome to intermediate Japanese cooking! In this lesson, you'll master essential cooking methods, traditional equipment, and knife techniques that form the backbone of Japanese culinary artistry.",
     "sections": [
       {
-        "title": "Las Salsas: El Alma de México",
+        "title": "Donabe: The Clay Cooking Vessel",
         "icon": "Sparkles",
-        "content": "Las salsas mexicanas tienen como base principal el tomate, ya sea tomate rojo (jitomate) o tomate verde (tomatillo). Estos se combinan con chiles, cebolla, ajo y especias para crear infinitas variaciones. Cada región tiene sus propias salsas tradicionales que acompañan desde tacos hasta platillos complejos."
+        "content": "The donabe is a traditional Japanese clay pot that has been used for centuries. Its porous clay material retains heat evenly and imparts a subtle earthy flavor to food. Perfect for making rice, stews, and hot pots, the donabe creates gentle, uniform cooking that preserves the natural flavors of ingredients."
       },
       {
-        "title": "Los Chiles: Diversidad de Sabores",
-        "icon": "BookOpen",
-        "content": "México tiene más de 60 variedades de chiles. El poblano es uno de los más versátiles y populares para principiantes, ya que ofrece sabor profundo con calor moderado. Se usa fresco en rajas, relleno o seco (chile ancho) para moles y salsas."
-      },
-      {
-        "title": "Masa de Maíz: La Base Ancestral",
+        "title": "Knife Skills: Julienne Cutting",
         "icon": "Target",
-        "content": "Las tortillas tradicionales se hacen con masa de maíz nixtamalizado, no con harina de trigo. El proceso de nixtamalización (cocinar el maíz con cal) mejora el sabor, la textura y el valor nutricional. Esta masa se usa para tortillas, tamales, sopes y muchos otros antojitos mexicanos."
+        "content": "Julienne is a fundamental cutting technique creating thin, matchstick-like strips (1-2mm thick, 4-5cm long). This precise cut ensures even cooking and elegant presentation. Used for vegetables in dishes like kinpira gobo and garnishes for sashimi platters."
       },
       {
-        "title": "El Comal: Herramienta Esencial",
+        "title": "Miso Soup Tradition",
         "icon": "Layers",
+        "content": "Miso soup is traditionally served in wooden bowls (owan) that enhance the dining experience. The wooden material doesn't conduct heat, making it comfortable to hold, while the natural wood grain adds visual warmth. The bowls are often lacquered for durability and beauty."
+      },
+      {
+        "title": "Yakitori: The Art of Grilling",
+        "icon": "BookOpen",
         "listItems": [
-          "El comal es una plancha circular tradicionalmente de barro o metal",
-          "Se usa para cocer tortillas, tostar chiles y especias",
-          "Debe calentarse gradualmente para evitar que se quiebre",
-          "Un comal bien curado no necesita aceite para cocinar tortillas",
-          "También sirve para asar verduras y darles el sabor característico"
+          "Yakitori uses binchōtan charcoal for consistent, high heat",
+          "Skewers are typically made from bamboo or metal tare",
+          "Tare (sweet soy-based sauce) is applied in layers during cooking",
+          "Different cuts include momo (thigh), tsukune (meatballs), and negima (with leek)",
+          "The grill master (yakitori-ya) requires years of training to perfect timing"
         ]
       },
       {
-        "title": "Técnicas Tradicionales",
-        "icon": "BarChart",
+        "title": "Intermediate Techniques",
+        "icon": "LightbulbIcon",
         "listItems": [
-          "Tuesta los tomates y chiles directamente en el comal para mejor sabor",
-          "La masa debe tener consistencia suave pero no pegajosa",
-          "Las tortillas se cocinan sin aceite, solo en comal caliente",
-          "Los chiles poblanos se pueden asar para pelar fácilmente",
-          "Cada salsa tiene su molcajete ideal para lograr la textura perfecta"
+          "Season your donabe gradually with rice porridge before first use",
+          "Keep knives at 15-degree angle for precise julienne cuts",
+          "Wooden bowls should be warmed with hot water before serving miso soup",
+          "Yakitori requires constant attention - rotate skewers every 30-45 seconds"
         ]
       }
     ]

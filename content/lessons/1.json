@@ -1,41 +1,41 @@
 {
   "context": {
-    "introduction": "¡Bienvenido a los fundamentos de la cocina japonesa! En esta lección aprenderás sobre los pilares esenciales que definen la gastronomía japonesa: el umami, los ingredientes básicos y las técnicas de preparación más importantes.",
+    "introduction": "Welcome to the fundamentals of Japanese cuisine! In this lesson, you'll learn about the essential pillars that define Japanese gastronomy: umami, basic ingredients, and the most important preparation techniques.",
     "sections": [
       {
-        "title": "El Umami: El Quinto Sabor",
+        "title": "Umami: The Fifth Taste",
         "icon": "Sparkles",
-        "content": "El umami es el componente de sabor más importante en la cocina japonesa. Descubierto por el científico japonés Kikunae Ikeda en 1908, este 'quinto sabor' se caracteriza por ser sabroso, profundo y satisfactorio. Se encuentra naturalmente en ingredientes como kombu, katsuobushi (bonito seco) y shiitake."
+        "content": "Umami is the most important flavor component in Japanese cuisine. Discovered by Japanese scientist Kikunae Ikeda in 1908, this 'fifth taste' is characterized by being savory, deep, and satisfying. It's found naturally in ingredients like kombu, katsuobushi (dried bonito), and shiitake mushrooms."
       },
       {
-        "title": "Dashi: La Base de Todo",
+        "title": "Dashi: The Foundation of Everything",
         "icon": "Layers",
-        "content": "El dashi es el caldo fundamental que da vida a la cocina japonesa. Se prepara principalmente con kombu (alga marina) y katsuobushi. El kombu aporta minerales y un umami profundo, mientras que el katsuobushi añade notas ahumadas. Este caldo es la base de sopas, salsas y muchos platos tradicionales."
+        "content": "Dashi is the fundamental broth that gives life to Japanese cuisine. It's prepared mainly with kombu (seaweed) and katsuobushi. Kombu provides minerals and a deep umami, while katsuobushi adds smoky notes. This broth is the base for soups, sauces, and many traditional dishes."
       },
       {
-        "title": "Preparación del Arroz para Sushi",
+        "title": "Sushi Rice Preparation",
         "icon": "Target",
-        "content": "El arroz de sushi (shari) requiere una preparación especial. Después de cocinar el arroz japonés de grano corto, se mezcla cuidadosamente con vinagre de arroz (su), azúcar y sal mientras está caliente. Esta mezcla debe enfriarse a temperatura corporal para lograr la textura perfecta."
+        "content": "Sushi rice (shari) requires special preparation. After cooking short-grain Japanese rice, it's carefully mixed with rice vinegar (su), sugar, and salt while hot. This mixture must cool to body temperature to achieve the perfect texture."
       },
       {
-        "title": "Tempura: El Arte de la Fritura",
+        "title": "Tempura: The Art of Deep Frying",
         "icon": "BookOpen",
         "listItems": [
-          "La tempura se cocina por fritura profunda en aceite a 170-180°C",
-          "La masa debe estar fría y poco mezclada para lograr textura crujiente",
-          "Se usa agua helada y harina de bajo gluten",
-          "Los ingredientes deben estar secos antes de rebozar",
-          "El tiempo de cocción es crucial: pocos minutos para mantener los ingredientes tiernos"
+          "Tempura is cooked by deep frying in oil at 170-180°C (340-355°F)",
+          "The batter must be cold and lightly mixed to achieve crispy texture",
+          "Use ice water and low-gluten flour",
+          "Ingredients must be dry before battering",
+          "Cooking time is crucial: just a few minutes to keep ingredients tender"
         ]
       },
       {
-        "title": "Consejos para el Éxito",
+        "title": "Tips for Success",
         "icon": "LightbulbIcon",
         "listItems": [
-          "El umami se potencia combinando diferentes fuentes como kombu y hongos",
-          "Nunca hiervas el kombu, solo remójalo en agua tibia",
-          "El vinagre de arroz debe mezclarse cuando el arroz está caliente",
-          "Para tempura perfecta, mantén la masa fría y el aceite a temperatura constante"
+          "Umami is enhanced by combining different sources like kombu and mushrooms",
+          "Never boil kombu, just soak it in warm water",
+          "Rice vinegar should be mixed when the rice is hot",
+          "For perfect tempura, keep the batter cold and oil at constant temperature"
         ]
       }
     ]

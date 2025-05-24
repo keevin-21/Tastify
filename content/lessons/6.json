@@ -1,0 +1,38 @@
+{
+  "context": {
+    "introduction": "Master the sophisticated depths of Mexican cuisine! Explore ancient ingredients, complex preparations, and traditional dishes that represent the pinnacle of Mexican culinary artistry and cultural heritage.",
+    "sections": [
+      {
+        "title": "Mole: Mexico's Culinary Masterpiece",
+        "icon": "Sparkles",
+        "content": "Mole represents the apex of Mexican cuisine complexity. Mole Poblano, the most famous variety, can contain 30+ ingredients including multiple chiles, chocolate, nuts, seeds, and spices. The preparation is ritualistic, requiring precise timing, temperature control, and sometimes days of preparation. Each family guards their mole recipe as a treasured heirloom."
+      },
+      {
+        "title": "Amaranth: The Sacred Grain",
+        "icon": "Target",
+        "content": "Amaranth (amaranto) was sacred to the Aztecs, who used it for both nutrition and religious ceremonies. This ancient pseudocereal is naturally gluten-free and protein-rich. Today it's experiencing a renaissance in modern Mexican cuisine, used in everything from traditional alegrías (amaranth candy) to contemporary fine dining applications."
+      },
+      {
+        "title": "Cochinita Pibil: Yucatecan Tradition",
+        "icon": "BookOpen",
+        "content": "Cochinita Pibil represents the sophisticated fusion of Mayan and Spanish influences. Pork is marinated in achiote paste and citrus, wrapped in banana leaves, and traditionally cooked in an underground oven (pib). This ancient technique creates incredibly tender meat infused with earthy, aromatic flavors unique to the Yucatan Peninsula."
+      },
+      {
+        "title": "Tres Leches: The Perfect Finale",
+        "icon": "Layers",
+        "content": "Tres Leches cake exemplifies Mexican dessert mastery - a light sponge cake soaked in three milks (evaporated, condensed, and heavy cream), topped with cinnamon-dusted meringue. The technique requires perfect balance: enough moisture to saturate without making it soggy, creating a dessert that's both decadent and refreshing."
+      },
+      {
+        "title": "Master-Level Techniques",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "For authentic mole, each chile must be individually toasted to its perfect point",
+          "Amaranth should be popped like popcorn for the crispiest texture in alegrías",
+          "Banana leaves should be charred over flame to release oils before wrapping cochinita pibil",
+          "Tres leches requires overnight refrigeration for the milk to properly absorb",
+          "Master the art of patience - great Mexican dishes cannot be rushed"
+        ]
+      }
+    ]
+  }
+} 

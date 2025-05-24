@@ -1,0 +1,38 @@
+{
+  "context": {
+    "introduction": "Master the pinnacle of Korean culinary tradition! Explore royal court cuisine, advanced fermentation techniques, and the philosophical foundations that have shaped Korean gastronomy for over a millennium.",
+    "sections": [
+      {
+        "title": "Gungjung: Royal Court Cuisine",
+        "icon": "Sparkles",
+        "content": "Gungjung cuisine represents the highest level of Korean culinary art, developed in the royal palaces of the Joseon Dynasty. These elaborate dishes emphasize visual beauty, nutritional balance, and seasonal harmony. Each dish follows strict protocols for color, texture, and presentation, creating meals that are both nourishing and aesthetically perfect."
+      },
+      {
+        "title": "Advanced Fermentation: Time as Ingredient",
+        "icon": "Target",
+        "content": "Long fermentation techniques create Korea's most prized flavors. Aged kimchi (over 1 year) develops complex sourness perfect for stews. Traditional doenjang and gochujang are fermented for 3+ years, developing profound depth. These extended fermentations require precise temperature and humidity control, passed down through generations."
+      },
+      {
+        "title": "Jeotgal: The Umami Amplifier",
+        "icon": "BookOpen",
+        "content": "Jeotgal are fermented seafood condiments that add intense umami to Korean dishes. Made from various fish, shrimp, or shellfish fermented with salt for months, they provide the deep, oceanic flavors that distinguish Korean cuisine. Different regions specialize in specific jeotgal varieties, each with unique characteristics."
+      },
+      {
+        "title": "Temple Food Philosophy",
+        "icon": "Layers",
+        "content": "Korean Buddhist temple food represents the spiritual side of Korean cuisine. Based on Buddhist principles, it uses no garlic, onions, or animal products, yet achieves remarkable depth through fermentation, seasonal vegetables, and mindful preparation. This cuisine emphasizes harmony with nature and the meditative aspects of cooking."
+      },
+      {
+        "title": "Master-Level Korean Wisdom",
+        "icon": "LightbulbIcon",
+        "listItems": [
+          "Gungjung dishes should represent all five colors for nutritional balance",
+          "Long-fermented ingredients develop flavors impossible to achieve quickly",
+          "Jeotgal should be used sparingly - a little provides tremendous flavor",
+          "Temple food teaches that cooking itself can be a form of meditation",
+          "True Korean mastery comes from understanding the philosophy behind each dish"
+        ]
+      }
+    ]
+  }
+} 
