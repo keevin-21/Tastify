@@ -1,6 +1,6 @@
 import db from "@/db/drizzle";
 import { userProgress } from "@/db/schema";
-import { eq, ne } from "drizzle-orm";
+import { ne } from "drizzle-orm";
 
 /**
  * Generate a unique username by checking existing usernames in the database
