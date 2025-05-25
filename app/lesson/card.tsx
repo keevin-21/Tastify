@@ -1,8 +1,9 @@
 import { challenges } from "@/db/schema";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { useCallback } from "react";
-import { useAudio, useKey } from "react-use";
+import { useKey } from "react-use";
+import { CloudinaryImage } from "@/components/cloudinary-image";
+import { useCloudinaryAudio } from "@/hooks/use-cloudinary-audio";
 
 type Props = {
     id: number;
@@ -28,14 +29,16 @@ export const Card = ({
     disabled,
     type,
 }: Props) => {
-    const [audio, , controls] = useAudio({ src: audioSrc || "" });
+    const { audio, controls, hasAudio } = useCloudinaryAudio(audioSrc);
     
     const handleClick = useCallback(() => {
         if (disabled) return;
 
-        controls.play();
+        if (hasAudio && controls) {
+            controls.play();
+        }
         onClick();
-    },[disabled, onClick, controls]);
+    },[disabled, onClick, controls, hasAudio]);
 
     useKey(shortcut, handleClick, {}, [handleClick]);
     
@@ -52,19 +55,24 @@ export const Card = ({
                 type === "SELECT" && "min-h-[100px] flex flex-col justify-center"
             )}        
         >
-            {audio}
+            {audio && hasAudio && audio}
             {imageSrc && (
                 <div
                     className={cn(
                         "relative mb-4 max-h-[80px] lg:max-h-[150px] w-full flex justify-center",
-                        type === "SELECT" && "aspect-square mx-auto max-w-[120px]"
+                        type === "SELECT" && "aspect-square mx-auto max-w-[140px] lg:max-w-[180px] max-h-[140px] lg:max-h-[180px]"
                     )}
                 >
-                    <Image
+                    <CloudinaryImage
                         src={imageSrc}
-                        fill
                         alt={text}
-                        className="object-contain"
+                        width={type === "SELECT" ? 180 : 150}
+                        height={type === "SELECT" ? 180 : 150}
+                        className="w-full h-full"
+                        sizes={type === "SELECT" ? 
+                            "(max-width: 768px) 140px, 180px" : 
+                            "(max-width: 768px) 80px, 150px"
+                        }
                     />
                 </div>
             )}
