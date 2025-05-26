@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tastify
+
+Tastify is an interactive learning platform built with [Next.js](https://nextjs.org), designed to gamify the learning process through challenges, lessons, rewards, and leaderboards.
+
+## Table of Contents
+
+- [Main Features](#main-features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Administration](#administration)
+- [Components & Hooks](#components--hooks)
+- [Utilities & Constants](#utilities--constants)
+- [Screenshots](#screenshots)
+- [Contributing & .github](#contributing--github)
+- [License](#license)
+
+---
+
+## Main Features
+
+- **Gamification**: Points, hearts, streaks, and rewards system.
+- **Lessons & Courses**: Learn through units, lessons, and interactive challenges.
+- **Quests**: Daily and weekly missions to keep you motivated.
+- **Leaderboard**: Ranking table to encourage healthy competition.
+- **Shop**: Redeem points for rewards.
+- **Admin Panel**: Manage courses, units, lessons, and challenges.
+- **Internationalization**: Support for multiple languages and visual resources.
+
+## Project Structure
+
+```
+app/                # Main pages and routes
+  (main)/           # Sections: leaderboard, quests, shop, courses, learn
+  admin/            # Admin panel (courses, units, lessons, challenges)
+  lesson/           # Lesson logic and views
+  (marketing)/      # Landing and public pages
+components/         # Reusable components (sidebar, quests, modals, etc.)
+hooks/              # Custom hooks (e.g., use-cloudinary-audio)
+lib/                # Shared utilities and logic
+content/lessons/    # Example lesson content in JSON
+public/             # Static resources (images, sounds, icons)
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Administration
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The admin panel allows you to create, edit, and list:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Courses
+- Units
+- Lessons
+- Challenges and challenge options
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Go to `/admin` to manage the platform content.
 
-## Learn More
+## Components & Hooks
 
-To learn more about Next.js, take a look at the following resources:
+- **Key components:**
+  - `sidebar`, `quests`, `user-progress`, `cloudinary-image`, `modals`, etc.
+- **Custom hooks:**
+  - `use-cloudinary-audio`: Cloudinary audio management.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Utilities & Constants
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **lib/**: Functions for Cloudinary, Stripe, user utilities, lesson context, etc.
+- **constants/**: Global constants for the app.
 
-## Deploy on Vercel
+## Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+_Add main app screenshots here:_
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Home                 | Lesson                | Leaderboard                 | Shop                 | Quests                 |
+| -------------------- | --------------------- | --------------------------- | -------------------- | ---------------------- |
+| ![](public/hero.png) | ![](public/learn.png) | ![](public/leaderboard.png) | ![](public/shop.png) | ![](public/quests.png) |
+
+## Contributing & .github
+
+- It is recommended to create a `.github/` directory with:
+  - `CONTRIBUTING.md`: Contribution guide.
+  - `ISSUE_TEMPLATE/`: Issue and PR templates.
+  - `CODE_OF_CONDUCT.md`: Code of conduct.
+- Contributions are welcome! Open an issue or PR.
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+> _Tastify: Learn by playing, progress by competing!_
