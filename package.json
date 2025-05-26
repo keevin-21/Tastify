@@ -22,7 +22,7 @@
     "audio:test": "tsx ./scripts/test-elevenlabs.ts"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.12.10",
+    "@clerk/nextjs": "^6.20.0",
     "@electric-sql/pglite": "^0.2.17",
     "@neondatabase/serverless": "^1.0.0",
     "@radix-ui/react-avatar": "^1.1.10",
@@ -37,7 +37,7 @@
     "clsx": "^2.1.1",
     "dotenv": "^16.5.0",
     "drizzle-orm": "^0.42.0",
-    "framer-motion": "^12.12.2",
+    "framer-motion": "^12.13.0",
     "ldrs": "^1.1.7",
     "lucide-react": "^0.484.0",
     "next": "^15.2.4",
