@@ -5,25 +5,25 @@
       {
         "title": "Natural Tenderizers",
         "icon": "Target",
-        "content": "Korean marinades often include natural ingredients that help break down tough meat fibers."
+        "content": "Korean marinades often include ingredients like Asian pear and soy sauce to tenderize meat."
       },
       {
         "title": "Marination Time",
-        "icon": "Sparkles", 
+        "icon": "Sparkles",
         "content": "Proper marination requires patience. The right timing develops flavor while ensuring tenderness."
       },
       {
-        "title": "Name Origins",
+        "title": "Meat Selection",
         "icon": "BookOpen",
-        "content": "Korean dish names often describe the cooking method or main characteristic of the food."
+        "content": "Different cuts of meat are used for different dishes, each bringing unique texture and flavor."
       },
       {
-        "title": "Meat Selection",
+        "title": "Grilling Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Different cuts work better for different Korean dishes",
-          "Marbling affects both flavor and cooking time",
-          "Traditional ingredients create authentic taste"
+          "Slice meat thin for quick cooking",
+          "Marinate overnight for best flavor",
+          "Use a hot grill for caramelization"
         ]
       }
     ]

@@ -1,42 +1,35 @@
 {
   "context": {
-    "introduction": "¡Bienvenidos a la cocina mexicana! Discover the essential foundations of Mexican cuisine - from the vibrant world of salsas to traditional cooking tools that have shaped one of the world's most beloved culinary traditions.",
+    "introduction": "Learn the basics of Japanese rice and noodle preparation. Discover the importance of washing rice, noodle types, and cooking ratios.",
     "sections": [
       {
-        "title": "Salsas: The Heart of Mexican Cuisine",
+        "title": "Rice Washing",
         "icon": "Sparkles",
-        "content": "Salsas are the soul of Mexican cooking, with tomatoes (jitomate and tomatillo) forming the base of most recipes. These versatile sauces combine fresh or roasted tomatoes with chiles, onions, garlic, and herbs to create countless regional variations. Each salsa tells the story of its region and family traditions."
+        "content": "Japanese rice should be washed several times before cooking to remove excess starch and achieve the right texture."
       },
       {
-        "title": "Chile Poblano: The Gentle Giant",
-        "icon": "BookOpen",
-        "content": "The poblano chile is perfect for beginners, offering rich, earthy flavors with mild to moderate heat (1,000-2,000 Scoville units). When fresh, it's ideal for chiles rellenos and rajas. When dried, it becomes the chile ancho, essential for complex moles and sophisticated sauces."
-      },
-      {
-        "title": "Masa de Maíz: Ancient Grain, Modern Kitchen",
+        "title": "Noodle Varieties",
         "icon": "Target",
-        "content": "Corn masa is created through nixtamalización - an ancient Mesoamerican process where corn is cooked with lime (cal). This process improves nutritional value, flavor, and workability. Fresh masa creates the perfect tortillas, tamales, and countless antojitos that define Mexican street food."
+        "content": "Ramen, soba, and udon are staple noodles in Japanese cuisine, each with unique characteristics."
       },
       {
-        "title": "El Comal: The Essential Griddle",
+        "title": "Soba: Buckwheat Noodles",
         "icon": "Layers",
-        "listItems": [
-          "Traditional comals are made from clay, cast iron, or carbon steel",
-          "Used for cooking tortillas, toasting spices, and charring vegetables",
-          "A well-seasoned comal develops a natural non-stick surface",
-          "Heat gradually to prevent cracking (especially clay comals)",
-          "The comal imparts a distinctive smoky flavor to ingredients"
-        ]
+        "content": "Soba noodles are made from buckwheat and are enjoyed hot or cold."
       },
       {
-        "title": "Fundamental Techniques",
+        "title": "Rice to Water Ratio",
+        "icon": "BookOpen",
+        "content": "The ideal ratio for Japanese rice is about 1:1.1 (rice:water) for perfect texture."
+      },
+      {
+        "title": "Preparation Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Char tomatoes and tomatillos directly on the comal for deeper flavor",
-          "Toast dried chiles briefly to awaken their oils - don't burn them",
-          "Fresh masa should feel smooth and pliable, never sticky or dry",
-          "Season your comal with a light coating of oil and heat gradually",
-          "Practice the 'tortilla flip' - confidence is key to perfect tortillas"
+          "Wash rice until water runs clear",
+          "Use the right noodle for each dish",
+          "Test doneness by tasting",
+          "Let rice rest after cooking for fluffiness"
         ]
       }
     ]

@@ -1,29 +1,29 @@
 {
   "context": {
-    "introduction": "Learn fundamental Korean cooking techniques that create the perfect balance of flavors and textures.",
+    "introduction": "Learn the fundamental cooking techniques of Korean cuisine. Discover the importance of knife skills, flavor balance, and essential oils.",
     "sections": [
-      {
-        "title": "Cooking Methods",
-        "icon": "Sparkles",
-        "content": "Korean cuisine uses specific cooking techniques that bring out the best in each ingredient."
-      },
       {
         "title": "Knife Skills",
         "icon": "Target",
-        "content": "How you cut vegetables affects both cooking time and final presentation in Korean dishes."
+        "content": "Precise knife skills are essential for preparing vegetables and meats in Korean dishes."
       },
       {
         "title": "Flavor Balance",
-        "icon": "BookOpen",
-        "content": "Korean cooking seeks harmony between different taste elements to create satisfying meals."
+        "icon": "Sparkles",
+        "content": "Korean cuisine seeks harmony between sweet, salty, spicy, and sour flavors."
       },
       {
         "title": "Essential Oils",
+        "icon": "BookOpen",
+        "content": "Sesame oil and perilla oil are commonly used to add aroma and depth to Korean dishes."
+      },
+      {
+        "title": "Technique Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Different oils bring different flavors to dishes",
-          "Cutting techniques affect cooking results",
-          "Balance creates the signature Korean taste profile"
+          "Cut ingredients evenly for even cooking",
+          "Balance flavors for authentic taste",
+          "Add oils at the end for best aroma"
         ]
       }
     ]

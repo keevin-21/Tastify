@@ -45,7 +45,7 @@ export const ResultCard = ({ value, variant }: Props) => {
                                     alt="icon"
                                     width={40}
                                     height={40}
-                                    className="lg:w-12 lg:h-12 drop-shadow-sm"
+                                    className="lg:w-12 lg:h-12 drop-shadow-lg"
                                 />
                                 {/* Icon glow effect */}
                                 <div className={cn(

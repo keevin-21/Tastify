@@ -1,29 +1,29 @@
 {
   "context": {
-    "introduction": "Discover Korean side dishes and classic meals. Learn about the variety and balance that defines Korean dining.",
+    "introduction": "Discover simple Korean dishes and the basics of banchan (side dishes). Learn about meal balance, classic soups, and mixed rice dishes.",
     "sections": [
       {
-        "title": "Side Dish Culture",
+        "title": "Banchan: Side Dishes",
         "icon": "Sparkles",
-        "content": "Korean meals feature multiple small dishes that complement the main course and add variety."
+        "content": "Banchan are small side dishes served with Korean meals, adding variety and balance."
       },
       {
-        "title": "Traditional Soups",
+        "title": "Classic Soups",
         "icon": "Target",
-        "content": "Korean soups range from simple broths to hearty stews, each serving different purposes in the meal."
+        "content": "Soups like doenjang jjigae and kimchi jjigae are staples in Korean cuisine, each with unique flavors."
       },
       {
-        "title": "Mixed Dishes",
+        "title": "Mixed Rice Dishes",
         "icon": "BookOpen",
-        "content": "Some Korean dishes combine multiple ingredients in one bowl, creating balanced, complete meals."
+        "content": "Dishes like bibimbap combine rice, vegetables, and protein in one bowl for a balanced meal."
       },
       {
-        "title": "Meal Balance",
+        "title": "Meal Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Korean meals aim for variety and balance",
-          "Traditional names often describe the dish's essence",
-          "Side dishes are served in specific quantities"
+          "Serve a variety of banchan for balance",
+          "Use seasonal ingredients for freshness",
+          "Mix rice dishes just before eating"
         ]
       }
     ]

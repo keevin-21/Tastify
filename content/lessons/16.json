@@ -1,28 +1,28 @@
 {
   "context": {
-    "introduction": "Discover the heart of Korean cooking through fermentation and essential ingredients that create bold, complex flavors.",
+    "introduction": "Discover the essential ingredients and fermentation techniques that define Korean cuisine. Learn about kimchi, gochujang, and the importance of color and balance.",
     "sections": [
       {
-        "title": "Fermented Treasures",
+        "title": "Kimchi: Fermented Treasure",
         "icon": "Sparkles",
-        "content": "Korean cuisine celebrates fermented foods that develop deep, complex flavors over time."
+        "content": "Kimchi is Korea's most famous fermented food, made from napa cabbage, radish, and a blend of seasonings."
       },
       {
-        "title": "Color and Heat",
+        "title": "Gochujang: Spicy Paste",
         "icon": "Target",
-        "content": "Korean dishes are known for their vibrant colors and balanced heat from special pastes and ingredients."
+        "content": "Gochujang is a spicy, fermented red chili paste that adds heat and depth to many Korean dishes."
       },
       {
-        "title": "Traditional Vegetables",
-        "icon": "BookOpen", 
-        "content": "Certain vegetables form the foundation of Korean fermented foods, chosen for their texture and flavor potential."
+        "title": "Essential Vegetables",
+        "icon": "BookOpen",
+        "content": "Vegetables like napa cabbage, radish, and green onion are the foundation of many Korean side dishes."
       },
       {
-        "title": "Fermentation Basics",
+        "title": "Fermentation Tips",
         "icon": "LightbulbIcon",
         "listItems": [
           "Good fermentation takes patience and time",
-          "Traditional ingredients create the best flavors", 
+          "Traditional ingredients create the best flavors",
           "Proper timing develops the right taste and texture"
         ]
       }

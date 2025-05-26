@@ -1,41 +1,35 @@
 {
   "context": {
-    "introduction": "Welcome to intermediate Japanese cooking! In this lesson, you'll master essential cooking methods, traditional equipment, and knife techniques that form the backbone of Japanese culinary artistry.",
+    "introduction": "Learn about the essential tools and equipment in a Japanese kitchen. Discover the importance of the rice paddle, knives, and traditional cookware.",
     "sections": [
       {
-        "title": "Donabe: The Clay Cooking Vessel",
+        "title": "Shamoji: The Rice Paddle",
         "icon": "Sparkles",
-        "content": "The donabe is a traditional Japanese clay pot that has been used for centuries. Its porous clay material retains heat evenly and imparts a subtle earthy flavor to food. Perfect for making rice, stews, and hot pots, the donabe creates gentle, uniform cooking that preserves the natural flavors of ingredients."
+        "content": "The shamoji is a wooden rice paddle used to mix and serve rice without crushing the grains."
       },
       {
-        "title": "Knife Skills: Julienne Cutting",
+        "title": "Japanese Knives",
         "icon": "Target",
-        "content": "Julienne is a fundamental cutting technique creating thin, matchstick-like strips (1-2mm thick, 4-5cm long). This precise cut ensures even cooking and elegant presentation. Used for vegetables in dishes like kinpira gobo and garnishes for sashimi platters."
+        "content": "Japanese knives are known for their sharpness and precision. Always wash them by hand and keep them dry."
       },
       {
-        "title": "Miso Soup Tradition",
+        "title": "Cutting Boards",
         "icon": "Layers",
-        "content": "Miso soup is traditionally served in wooden bowls (owan) that enhance the dining experience. The wooden material doesn't conduct heat, making it comfortable to hold, while the natural wood grain adds visual warmth. The bowls are often lacquered for durability and beauty."
+        "content": "Traditional Japanese cutting boards are made from wood, which is gentle on knife edges."
       },
       {
-        "title": "Yakitori: The Art of Grilling",
+        "title": "Donabe: Clay Pot Cooking",
         "icon": "BookOpen",
-        "listItems": [
-          "Yakitori uses binchōtan charcoal for consistent, high heat",
-          "Skewers are typically made from bamboo or metal tare",
-          "Tare (sweet soy-based sauce) is applied in layers during cooking",
-          "Different cuts include momo (thigh), tsukune (meatballs), and negima (with leek)",
-          "The grill master (yakitori-ya) requires years of training to perfect timing"
-        ]
+        "content": "The donabe is a clay pot used for cooking rice and stews, providing even heat and subtle flavor."
       },
       {
-        "title": "Intermediate Techniques",
+        "title": "Tool Care Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Season your donabe gradually with rice porridge before first use",
-          "Keep knives at 15-degree angle for precise julienne cuts",
-          "Wooden bowls should be warmed with hot water before serving miso soup",
-          "Yakitori requires constant attention - rotate skewers every 30-45 seconds"
+          "Wash knives by hand, never in the dishwasher",
+          "Use wooden boards to protect knife edges",
+          "Season your donabe before first use",
+          "Keep all tools clean and dry"
         ]
       }
     ]

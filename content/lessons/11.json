@@ -1,36 +1,35 @@
 {
   "context": {
-    "introduction": "Deepen your Korean culinary knowledge! Explore advanced fermentation techniques, traditional cooking vessels, and the art of Korean marinades that create the complex flavors Korean cuisine is famous for.",
+    "introduction": "Discover the essential ingredients and olive oil that form the foundation of Italian cuisine. Learn about herbs, cheeses, and the importance of quality ingredients.",
     "sections": [
       {
-        "title": "Doenjang: The Fermented Foundation",
+        "title": "Olive Oil: Liquid Gold",
         "icon": "Sparkles",
-        "content": "Doenjang is Korea's traditional fermented soybean paste, aged for months or even years. Unlike Japanese miso, doenjang has a deeper, earthier flavor with pronounced umami. It's the base for doenjang jjigae (soybean paste stew) and countless other dishes. The fermentation process creates beneficial enzymes and probiotics."
+        "content": "Extra virgin olive oil is the most important oil in Italian cooking, used for dressing, cooking, and finishing dishes."
       },
       {
-        "title": "Korean Pancakes: Pan Frying Mastery",
+        "title": "Essential Herbs",
         "icon": "Target",
-        "content": "Korean pancakes (jeon) require the perfect pan-frying technique. The batter should be thin enough to create crispy edges while maintaining a tender center. The pan must be properly heated with adequate oil to achieve the characteristic golden-brown crust. Different vegetables and proteins create endless variations."
+        "content": "Basil, oregano, and parsley are key herbs in Italian cuisine, adding freshness and aroma."
       },
       {
-        "title": "Bulgogi: The Art of Marination",
-        "icon": "BookOpen",
-        "content": "Bulgogi represents Korean marination mastery. Thinly sliced beef is marinated for at least 4 hours (preferably overnight) in a mixture of soy sauce, Asian pear, garlic, ginger, and sesame oil. The pear's enzymes tenderize the meat while adding subtle sweetness that balances the salty and savory elements."
-      },
-      {
-        "title": "Dolsot: The Stone Bowl Tradition",
+        "title": "Cheese Varieties",
         "icon": "Layers",
-        "content": "The dolsot (stone bowl) is essential for dishes like bibimbap and dolsot bap. Made from granite or similar stone, it retains heat exceptionally well and creates the prized crispy rice crust (nurungji) at the bottom. The bowl must be heated gradually to prevent cracking and seasoned properly for best results."
+        "content": "Parmesan, mozzarella, and ricotta are commonly used cheeses, each bringing unique texture and flavor."
       },
       {
-        "title": "Intermediate Korean Techniques",
+        "title": "Garlic: Sliced Thin",
+        "icon": "BookOpen",
+        "content": "Garlic is often sliced thin and gently cooked to release its flavor without burning."
+      },
+      {
+        "title": "Ingredient Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Age doenjang in a cool, dark place for deeper flavor development",
-          "Korean pancake batter should rest 10-15 minutes before cooking",
-          "Bulgogi meat should be sliced paper-thin against the grain",
-          "Heat dolsot gradually and oil lightly before adding ingredients",
-          "Balance is key: sweet, salty, spicy, and umami should harmonize"
+          "Use high-quality olive oil for best results",
+          "Add fresh herbs at the end of cooking",
+          "Slice garlic thin for even flavor",
+          "Grate cheese fresh for maximum aroma"
         ]
       }
     ]

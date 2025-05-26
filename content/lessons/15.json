@@ -1,6 +1,6 @@
 {
   "context": {
-    "introduction": "Learn to create and present classic Italian dishes. From simple appetizers to perfect pizza, presentation matters.",
+    "introduction": "Learn to create and present simple Italian dishes. From appetizers to pizza, discover the importance of presentation and classic combinations.",
     "sections": [
       {
         "title": "Classic Starters",
@@ -9,7 +9,7 @@
       },
       {
         "title": "Serving Temperature",
-        "icon": "Target", 
+        "icon": "Target",
         "content": "Italian dishes are best enjoyed at their intended temperature. This affects both taste and texture."
       },
       {

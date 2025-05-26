@@ -1,29 +1,29 @@
 {
   "context": {
-    "introduction": "Master the art of cooking pasta perfectly. Learn the essential techniques that separate good pasta from great pasta.",
+    "introduction": "Master the art of cooking pasta to perfection. Learn about al dente texture, water salting, and common mistakes.",
     "sections": [
       {
-        "title": "The Perfect Texture",
+        "title": "Al Dente: The Perfect Bite",
         "icon": "Target",
-        "content": "Italian pasta has a specific texture that's firm yet tender. This balance takes practice and attention to timing."
+        "content": "Pasta should be cooked al dente, meaning firm to the bite, for the best texture and flavor."
       },
       {
-        "title": "Water Preparation",
-        "icon": "Sparkles", 
-        "content": "The water you cook pasta in affects the final result. The amount of salt matters more than you might think."
+        "title": "Salting the Water",
+        "icon": "Sparkles",
+        "content": "Properly salted water is essential for flavorful pasta. Use about 1 tablespoon of salt per 4 liters of water."
       },
       {
         "title": "Common Mistakes",
         "icon": "BookOpen",
-        "content": "Many home cooks add ingredients to pasta water that actually work against achieving perfect results."
+        "content": "Avoid adding oil to pasta water, as it prevents sauce from sticking."
       },
       {
         "title": "Pro Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Test your pasta before the package time suggests",
-          "The pasta water becomes part of your sauce",
-          "Timing is everything - pasta waits for no one"
+          "Test pasta a minute before the package time",
+          "Reserve some pasta water for the sauce",
+          "Timing is everything—pasta waits for no one"
         ]
       }
     ]

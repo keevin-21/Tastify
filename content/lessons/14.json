@@ -1,21 +1,21 @@
 {
   "context": {
-    "introduction": "Discover the building blocks of Italian flavor. Simple sauces and fresh herbs can transform any dish.",
+    "introduction": "Discover the basics of Italian sauces and herbs. Learn how simple combinations and fresh herbs create classic flavors.",
     "sections": [
       {
-        "title": "Simplicity Rules",
+        "title": "Simple Sauces",
         "icon": "Sparkles",
-        "content": "The most elegant Italian sauces often have the fewest ingredients. Sometimes less truly is more."
+        "content": "The simplest Italian sauces use just a few ingredients, like tomato, garlic, and olive oil."
       },
       {
         "title": "Herb Timing",
         "icon": "Target",
-        "content": "When you add herbs to your cooking can make the difference between bright flavor and dull taste."
+        "content": "Add fresh herbs at the end of cooking for bright flavor; dried herbs can be added earlier."
       },
       {
-        "title": "Classic Combinations",
+        "title": "Classic Pairings",
         "icon": "BookOpen",
-        "content": "Certain herbs naturally complement specific ingredients. These partnerships have been perfected over generations."
+        "content": "Certain herbs pair naturally with specific ingredients, like basil with tomato and sage with butter."
       },
       {
         "title": "Kitchen Wisdom",

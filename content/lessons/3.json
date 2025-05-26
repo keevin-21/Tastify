@@ -1,44 +1,35 @@
 {
   "context": {
-    "introduction": "Master the pinnacle of Japanese culinary artistry! This advanced lesson explores the sophisticated world of kaiseki cuisine, traditional presentations, and the philosophical underpinnings that elevate Japanese cooking to an art form.",
+    "introduction": "Master the fundamental cooking techniques of Japanese cuisine. Learn about tempura, steaming, and the importance of precise preparation.",
     "sections": [
       {
-        "title": "Kaiseki: The Ultimate Culinary Experience",
+        "title": "Tempura: Light and Crispy Frying",
         "icon": "Sparkles",
-        "content": "Kaiseki represents the highest form of Japanese cuisine, originally developed for the tea ceremony. This multi-course meal emphasizes seasonal ingredients, harmony of flavors, colors, and textures. Each dish is carefully planned to create a progression that tells the story of the season while balancing taste, nutrition, and visual beauty."
+        "content": "Tempura is a technique of frying ingredients in a light batter at the right temperature for a crispy texture."
       },
       {
-        "title": "Sushi Rice Aging Techniques",
+        "title": "Steaming: Gentle Cooking",
         "icon": "Target",
-        "content": "Master sushi chefs employ sophisticated aging techniques for sushi rice. The rice is prepared with precise vinegar mixtures and allowed to reach body temperature through controlled cooling. Some high-end establishments age their rice up to 24 hours, developing complex flavors and perfect texture through careful temperature and humidity control."
+        "content": "Steaming is used for dishes like chawanmushi, preserving delicate flavors and textures."
       },
       {
-        "title": "Moritsuke: The Art of Presentation",
-        "icon": "BookOpen",
-        "content": "Moritsuke is the Japanese art of food arrangement that transforms dishes into visual poetry. It follows principles of asymmetrical balance, seasonal representation, and negative space utilization. Every element—from plate selection to ingredient placement—is deliberate, creating harmony between food, vessel, and natural beauty."
-      },
-      {
-        "title": "Kaiseki Philosophy & Structure",
+        "title": "Knife Skills",
         "icon": "Layers",
-        "listItems": [
-          "Sakizuke (appetizer): Sets the seasonal tone",
-          "Wanmono (clear soup): Cleanses the palate", 
-          "Sashimi: Showcases the finest seasonal fish",
-          "Yakimono (grilled dish): Demonstrates cooking mastery",
-          "Nimono (simmered dish): Reveals ingredient harmony",
-          "Takiawase (mixed vegetables): Celebrates seasonal produce",
-          "Gohan (rice dish): Provides satisfying conclusion"
-        ]
+        "content": "Proper knife techniques ensure even cooking and beautiful presentation."
       },
       {
-        "title": "Advanced Mastery Principles",
+        "title": "Oil Temperature",
+        "icon": "BookOpen",
+        "content": "For tempura, oil should be kept at 170-180°C (340-355°F) for best results."
+      },
+      {
+        "title": "Technique Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Each kaiseki course should reflect the exact season and weather",
-          "Use odd numbers in plating for visual balance and natural harmony",
-          "Master the five cooking methods: raw, simmered, grilled, steamed, and fried",
-          "Practice 'omotenashi' - hospitality that anticipates guests' needs before they know them",
-          "Study traditional poetry and art to understand seasonal symbolism in food presentation"
+          "Mix tempura batter lightly and keep it cold",
+          "Test oil temperature with a drop of batter",
+          "Use fresh ingredients for best flavor",
+          "Practice makes perfect for knife skills"
         ]
       }
     ]

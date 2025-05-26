@@ -1,29 +1,29 @@
 {
   "context": {
-    "introduction": "Master Korean cooking tools and rice preparation. The right equipment and techniques make all the difference.",
+    "introduction": "Master the tools and rice preparation techniques of Korean cooking. Learn about rice varieties, stone bowls, and the importance of washing rice.",
     "sections": [
       {
         "title": "Rice Varieties",
         "icon": "Target",
-        "content": "Korean cuisine uses specific rice types that create the perfect texture for traditional dishes."
+        "content": "Short-grain rice is preferred in Korean cuisine for its sticky texture, perfect for eating with chopsticks."
       },
       {
-        "title": "Cooking Equipment",
+        "title": "Stone Bowls",
         "icon": "Sparkles",
-        "content": "Korean cooking uses specialized tools that help achieve authentic flavors and cooking methods."
+        "content": "Stone bowls (dolsot) are used to cook and serve rice, creating a crispy layer at the bottom."
       },
       {
-        "title": "Rice Preparation",
+        "title": "Rice Washing",
         "icon": "BookOpen",
-        "content": "Proper rice washing and preparation is fundamental to Korean cooking success."
+        "content": "Washing rice several times removes excess starch and ensures a clean, fluffy result."
       },
       {
-        "title": "Traditional Vessels",
+        "title": "Preparation Tips",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Stone bowls retain heat and create special textures",
-          "Proper rice washing affects the final result",
-          "Different cooking methods suit different dishes"
+          "Wash rice until water runs clear",
+          "Use the right rice for each dish",
+          "Let rice rest after cooking for best texture"
         ]
       }
     ]

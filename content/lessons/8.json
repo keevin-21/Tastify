@@ -1,36 +1,30 @@
 {
   "context": {
-    "introduction": "Elevate your Italian cooking mastery! Learn the traditional techniques of fresh pasta making, risotto perfection, and the foundational sauces that have made Italian cuisine beloved worldwide.",
+    "introduction": "Learn the fundamental cooking methods of Mexico! Discover how simple techniques create deep, complex flavors.",
     "sections": [
       {
-        "title": "Sfoglia: The Art of Fresh Pasta",
+        "title": "Charring: Building Flavor",
         "icon": "Sparkles",
-        "content": "Sfoglia is the Italian technique for rolling pasta dough into thin, silky sheets. Traditional sfoglia uses only eggs and '00' flour, kneaded until smooth and elastic, then rolled paper-thin. The dough should be transparent enough to read through when properly executed. This technique creates the base for tortellini, lasagna, and countless regional specialties."
+        "content": "Charring vegetables over flame or on a comal caramelizes sugars and adds smoky depth. This is the foundation of many salsas and sauces."
       },
       {
-        "title": "Risotto: The Perfect Marriage",
+        "title": "Cutting Techniques",
         "icon": "Target",
-        "content": "Authentic risotto requires dry white wine (Pinot Grigio or Sauvignon Blanc) to deglaze the rice and add acidity that balances the creaminess. The wine is added after toasting the rice and must be fully absorbed before adding warm broth. This step develops the complex flavor foundation that makes risotto extraordinary."
+        "content": "Dicing onions and tomatoes evenly helps them cook and blend well in salsas. Each cut affects the final texture and flavor."
       },
       {
-        "title": "The Constant Stirring Technique",
+        "title": "Roasting Chiles",
         "icon": "BookOpen",
-        "content": "Risotto must be stirred constantly with a wooden spoon in one direction to release the rice's starches gradually. This creates the characteristic creamy texture without cream. The stirring motion should be gentle but continuous, ensuring even cooking and preventing the rice from sticking to the pan bottom."
+        "content": "Roasting chiles brings out their flavor and makes them easier to peel. Always roast until the skin is blistered, then cover to steam before peeling."
       },
       {
-        "title": "Soffritto: The Flavor Foundation",
-        "icon": "Layers",
-        "content": "Soffritto is the slow-cooking method that forms the base of countless Italian sauces and stews. The holy trinity of onions, carrots, and celery is finely diced and cooked slowly in olive oil until soft and fragrant. This technique concentrates flavors and creates the aromatic foundation that defines authentic Italian cooking."
-      },
-      {
-        "title": "Intermediate Mastery",
+        "title": "Tips for Cooking",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Rest pasta dough for 30 minutes before rolling for better elasticity",
-          "Keep risotto broth warm in a separate pan throughout cooking",
-          "Add wine to risotto when you hear the rice 'singing' (slight sizzling)",
-          "Soffritto vegetables should be translucent, never browned",
-          "Taste and adjust seasoning constantly during the cooking process"
+          "Char tomatoes for better salsa flavor",
+          "Roast chiles dry, not in oil",
+          "Dice onions for even cooking",
+          "Take your time—flavor develops slowly"
         ]
       }
     ]

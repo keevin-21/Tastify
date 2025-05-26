@@ -1,42 +1,30 @@
 {
   "context": {
-    "introduction": "안녕하세요! (Annyeonghaseyo!) Welcome to the fundamentals of Korean cuisine. In this lesson, you'll discover the essential ingredients, fermentation techniques, and cooking methods that make this fascinating gastronomy unique.",
+    "introduction": "Discover simple Mexican salsas and basic dishes! Learn how to combine tortillas, beans, and fresh ingredients for classic flavors.",
     "sections": [
       {
-        "title": "Kimchi: The Fermented Treasure",
+        "title": "Pico de Gallo: The Simplest Salsa",
         "icon": "Sparkles",
-        "content": "Kimchi is Korea's most emblematic fermented vegetable, traditionally made with napa cabbage. This superfood is fermented with salt, gochugaru (chili powder), garlic, ginger, and other seasonings. Rich in probiotics, it serves both as a side dish and as a base ingredient for many dishes."
+        "content": "Pico de gallo is a fresh salsa made with diced tomatoes, onions, cilantro, lime, and chiles. It is quick to prepare and full of flavor."
       },
       {
-        "title": "Gochujang: The Soul Paste",
+        "title": "Quesadillas & Beans",
         "icon": "BookOpen",
-        "content": "Gochujang is a fermented paste made from red chiles, glutinous rice, fermented soybeans, and salt. Its flavor is complex: spicy, sweet, salty, and umami all at once. It's indispensable in dishes like bibimbap, tteokbokki, and meat marinades."
+        "content": "Quesadillas are tortillas filled with cheese and sometimes beans or other ingredients. Beans and tortillas are a staple combination in Mexican homes."
       },
       {
-        "title": "Short-Grain Rice: The Perfect Base",
+        "title": "Guacamole: The Green Dip",
         "icon": "Target",
-        "content": "Traditional Korean rice is short-grain, stickier than long-grain rice. It's typically cooked in a rice cooker or traditional clay pot (dolsot). Its texture allows a golden crust to form at the bottom, highly prized in Korean cuisine."
+        "content": "Guacamole is made from ripe avocados, lime, onion, cilantro, and chile. Its green color comes from the avocado."
       },
       {
-        "title": "Korean BBQ: The Art of Grilling",
-        "icon": "Layers",
-        "listItems": [
-          "Gas or charcoal grills with metal grates are used",
-          "Meats are marinated beforehand with ingredients like soy sauce, pear, and garlic",
-          "Meat is cut into small pieces for quick and even cooking",
-          "It's accompanied by banchan (small side dishes)",
-          "Each diner cooks their own portion at the table"
-        ]
-      },
-      {
-        "title": "Essential Techniques",
+        "title": "Tips for Simple Dishes",
         "icon": "LightbulbIcon",
         "listItems": [
-          "Kimchi improves with time: minimum 3 days of fermentation",
-          "Gochujang can be diluted with sesame oil for sauces",
-          "Rice is washed until the water runs clear before cooking",
-          "For Korean BBQ, preheat the grill well before cooking",
-          "Korean flavors balance sweet, salty, spicy, and sour"
+          "Use fresh ingredients for best flavor",
+          "Mash avocados just before serving",
+          "Tortillas can be filled with many ingredients",
+          "Beans and cheese are classic fillings"
         ]
       }
     ]
