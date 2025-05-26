@@ -1,105 +1,116 @@
 # Tastify
 
-Tastify is an interactive learning platform built with [Next.js](https://nextjs.org), designed to gamify the learning process through challenges, lessons, rewards, and leaderboards.
-
-## Table of Contents
-
-- [Main Features](#main-features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Administration](#administration)
-- [Components & Hooks](#components--hooks)
-- [Utilities & Constants](#utilities--constants)
-- [Screenshots](#screenshots)
-- [Contributing & .github](#contributing--github)
-- [License](#license)
+> **The new way to learn about world cuisines — gamified, interactive, and fun!**
 
 ---
 
-## Main Features
+![Tastify Hero](public/hero.png)
 
-- **Gamification**: Points, hearts, streaks, and rewards system.
-- **Lessons & Courses**: Learn through units, lessons, and interactive challenges.
-- **Quests**: Daily and weekly missions to keep you motivated.
-- **Leaderboard**: Ranking table to encourage healthy competition.
-- **Shop**: Redeem points for rewards.
-- **Admin Panel**: Manage courses, units, lessons, and challenges.
-- **Internationalization**: Support for multiple languages and visual resources.
+---
 
-## Project Structure
+## 🚀 What is Tastify?
 
-```
-app/                # Main pages and routes
-  (main)/           # Sections: leaderboard, quests, shop, courses, learn
-  admin/            # Admin panel (courses, units, lessons, challenges)
-  lesson/           # Lesson logic and views
-  (marketing)/      # Landing and public pages
-components/         # Reusable components (sidebar, quests, modals, etc.)
-hooks/              # Custom hooks (e.g., use-cloudinary-audio)
-lib/                # Shared utilities and logic
-content/lessons/    # Example lesson content in JSON
-public/             # Static resources (images, sounds, icons)
-```
+Tastify is a next-generation platform that transforms learning about global cuisines into an engaging, competitive, and rewarding experience. Whether you're a food enthusiast, a curious learner, or just love a challenge, Tastify makes discovering culinary cultures fun and addictive.
 
-## Getting Started
+---
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn
-   ```
-2. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+## ✨ Why You'll Love Tastify
 
-## Administration
+- **Gamified Learning:** Earn points, keep your hearts, and build streaks as you progress.
+- **Interactive Lessons:** Dive into bite-sized lessons, quizzes, and real-world culinary tips.
+- **Daily & Weekly Quests:** Stay motivated with new challenges every day and week.
+- **Shop & Rewards:** Redeem your points for cool in-app items and perks.
+- **Leaderboard:** Compete with friends and users worldwide for the top spot.
+- **Beautiful, Modern UI:** Enjoy a visually stunning and intuitive interface.
+- **Mobile Ready:** Learn and play anywhere, anytime.
 
-The admin panel allows you to create, edit, and list:
+---
 
-- Courses
-- Units
-- Lessons
-- Challenges and challenge options
+## 🖼️ App Highlights
 
-Go to `/admin` to manage the platform content.
+### Home / Welcome
 
-## Components & Hooks
+![Home](public/hero.png)
 
-- **Key components:**
-  - `sidebar`, `quests`, `user-progress`, `cloudinary-image`, `modals`, etc.
-- **Custom hooks:**
-  - `use-cloudinary-audio`: Cloudinary audio management.
+### Explore Courses
 
-## Utilities & Constants
+![Courses](public/courses.png)
 
-- **lib/**: Functions for Cloudinary, Stripe, user utilities, lesson context, etc.
-- **constants/**: Global constants for the app.
+### Learn & Progress
 
-## Screenshots
+![Learn](public/learn.png)
 
-_Add main app screenshots here:_
+### Lesson Context
 
-| Home                 | Lesson                | Leaderboard                 | Shop                 | Quests                 |
-| -------------------- | --------------------- | --------------------------- | -------------------- | ---------------------- |
-| ![](public/hero.png) | ![](public/learn.png) | ![](public/leaderboard.png) | ![](public/shop.png) | ![](public/quests.png) |
+![Lesson Context](public/lesson-context.png)
 
-## Contributing & .github
+### Quests & Missions
 
-- It is recommended to create a `.github/` directory with:
-  - `CONTRIBUTING.md`: Contribution guide.
-  - `ISSUE_TEMPLATE/`: Issue and PR templates.
-  - `CODE_OF_CONDUCT.md`: Code of conduct.
-- Contributions are welcome! Open an issue or PR.
+![Quests](public/quests.png)
 
-## License
+### Shop & Rewards
 
-[MIT](LICENSE)
+![Shop](public/shop.png)
+
+### Leaderboard
+
+![Leaderboard](public/leaderboard.png)
+
+### User Progress Sidebar
+
+![User Progress](public/user-progress.png)
+
+---
+
+## 🌍 Main Sections
+
+- **Courses:** Choose from a variety of world cuisines and start your journey.
+- **Learn:** Progress through interactive units and lessons, unlock new content, and test your knowledge.
+- **Lesson Context:** Get rich, contextual information, tips, and cultural insights for every lesson.
+- **Quests:** Complete daily and weekly missions for extra points and rewards.
+- **Shop:** Spend your hard-earned points on exclusive items and features.
+- **Leaderboard:** See how you stack up against the community.
+- **Profile & Progress:** Track your hearts, points, streaks, and achievements.
+
+---
+
+## 💬 What Users Say
+
+> "Tastify makes learning about food cultures as fun as playing a game!"
+
+> "I love the quests and the feeling of progress every day."
+
+> "The design is beautiful and the lessons are actually useful!"
+
+---
+
+## 🎯 Who is Tastify for?
+
+- Food lovers and home cooks
+- Students and lifelong learners
+- Anyone who loves games and challenges
+- People curious about world cultures
+
+---
+
+## 🔥 Ready to Taste the World?
+
+**Jump in, start learning, and climb the leaderboard!**
+
+[Try Tastify now!](https://tastify-rosy.vercel.app/)
 
 ---
 
 > _Tastify: Learn by playing, progress by competing!_
+
+---
+
+**Follow us on social media:**
+
+- [Instagram](#)
+- [Twitter](#)
+- [Facebook](#)
+
+---
+
+_Screenshots are for demonstration purposes. Update the images in the `public/` folder to showcase your own app experience!_
