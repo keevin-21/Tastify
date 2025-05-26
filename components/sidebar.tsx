@@ -33,9 +33,9 @@ export const Sidebar = ({ className }: Props) => {
             <Link href="/learn">
                 <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
                     <Image src="/mascot.png" height={40} width={40} alt="Mascot" />
-                        <h1 className="text 2xl font-extrabold text-[#f5f5f5]">
-                            Tastify
-                        </h1>
+                    <h1 className="text 2xl font-extrabold text-[#f5f5f5]">
+                        Tastify
+                    </h1>
                 </div>
             </Link>
             
@@ -43,52 +43,61 @@ export const Sidebar = ({ className }: Props) => {
                 <SidebarItem
                     label="Learn"
                     href="/learn"
-                    iconSrc="/learn.png"    //put svg icon in public folde4r
+                    iconSrc="/learn.png"
                 />
 
                 <SidebarItem
                     label="Leaderboard"
                     href="/leaderboard"
-                    iconSrc="/leaderboard.png"    //put svg icon in public folde4r
+                    iconSrc="/leaderboard.png"
                 />
 
                 <SidebarItem
                     label="Quests"
                     href="/quests"
-                    iconSrc="/quests.png"    //put svg icon in public folde4r
+                    iconSrc="/quests.png"
                 />
 
                 <SidebarItem
                     label="Shop"
                     href="/shop"
-                    iconSrc="/shop.png"    //put svg icon in public folde4r
+                    iconSrc="/shop.png"
                 />
             </div>
             
-            <div className="p-4 space-y-3">
+            <div className="p-4">
                 <ClerkLoading>
                     <Loader className="h-5 w-5 text-muted-foreground animate-spin" />
                 </ClerkLoading>
                 <ClerkLoaded>
                     <SignedIn>
-                        <div className="flex flex-col gap-y-3">
-                            <UserButton 
-                                afterSignOutUrl="/"
-                                appearance={{
-                                    elements: {
-                                        avatarBox: "w-10 h-10",
-                                        userButtonPopoverCard: "bg-[#2c2c2c] border-[#3c3c3c]",
-                                        userButtonPopoverText: "text-[#f5f5f5]"
-                                    }
-                                }}
-                            />
+                        <div className="flex flex-col gap-y-4">
+                            <div className="flex items-center gap-x-3 px-2">
+                                <UserButton 
+                                    afterSignOutUrl="/"
+                                    appearance={{
+                                        elements: {
+                                            avatarBox: "h-[48px] w-[48px]",
+                                            userButtonPopoverCard: "bg-[#2c2c2c] border-[#3c3c3c]",
+                                            userButtonPopoverText: "text-[#f5f5f5]",
+                                            userButtonPopoverActionButton: "hover:bg-[#3c3c3c] hover:text-[#f5f5f5]",
+                                            userButtonPopoverActionButtonText: "text-[#f5f5f5]",
+                                            userButtonPopoverFooter: "hidden"
+                                        }
+                                    }}
+                                />
+                                <div className="flex flex-col">
+                                    <span className="text-[#f5f5f5] font-semibold">Profile</span>
+                                    <span className="text-[#a1a1aa] text-sm">Manage your account</span>
+                                </div>
+                            </div>
                             <Button
                                 variant="ghost"
-                                className="justify-start h-[52px] text-[#f5f5f5] hover:bg-[#3c3c3c] hover:text-white transition-colors"
+                                className="justify-start h-[48px] text-[#f5f5f5] hover:bg-[#3c3c3c] hover:text-white transition-colors"
                                 onClick={handleSignOut}
                             >
                                 <LogOut className="mr-3 h-5 w-5" />
-                                Cerrar Sesión
+                                Sign Out
                             </Button>
                         </div>
                     </SignedIn>

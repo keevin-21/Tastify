@@ -46,42 +46,35 @@ export const Card = ({
         <div
             onClick={handleClick}
             className={cn(
-                "h-full border-2 rounded-xl border-b-4 hover:bg-[#232323] p-4 lg:p-6 cursor-pointer active:border-b-2 bg-[#1e1e1e] border-[#2c2c2c] transition-all duration-200",
+                "h-full border-2 rounded-xl border-b-4 hover:bg-[#232323] p-4 lg:p-6 cursor-pointer active:border-b-2 bg-[#1e1e1e] border-[#2c2c2c] transition-all duration-300",
                 selected && "border-[#FF6F1F] bg-[#2c2c2c] hover:bg-[#2c2c2c] transform scale-105",
                 selected && status === "correct" && "border-green-400 bg-green-900/40 hover:bg-green-900/40",
                 selected && status === "incorrect" && "border-red-400 bg-red-900/40 hover:bg-red-900/40",
                 disabled && "pointer-events-none opacity-60 hover:bg-[#1e1e1e]",
-                type === "ASSIST" && "lg:p-3 w-full",
-                type === "SELECT" && "min-h-[100px] flex flex-col justify-center"
+                type === "ASSIST" && "lg:p-4 w-full max-w-md mx-auto hover:shadow-lg hover:shadow-orange-500/20",
+                type === "SELECT" && "min-h-[100px] flex flex-col justify-center hover:shadow-lg hover:shadow-orange-500/20"
             )}        
         >
             {audio && hasAudio && audio}
-            {imageSrc && (
-                <div
-                    className={cn(
-                        "relative mb-4 max-h-[80px] lg:max-h-[150px] w-full flex justify-center",
-                        type === "SELECT" && "aspect-square mx-auto max-w-[140px] lg:max-w-[180px] max-h-[140px] lg:max-h-[180px]"
-                    )}
-                >
-                    <CloudinaryImage
-                        src={imageSrc}
-                        alt={text}
-                        width={type === "SELECT" ? 180 : 150}
-                        height={type === "SELECT" ? 180 : 150}
-                        className="w-full h-full"
-                        sizes={type === "SELECT" ? 
-                            "(max-width: 768px) 140px, 180px" : 
-                            "(max-width: 768px) 80px, 150px"
-                        }
-                    />
+            {imageSrc && type === "SELECT" && (
+                <div className="relative w-full flex justify-center mb-4">
+                    <div className="h-32 w-32">
+                        <CloudinaryImage
+                            src={imageSrc}
+                            alt={text}
+                            width={128}
+                            height={128}
+                            className="rounded-lg object-cover w-full h-full"
+                        />
+                    </div>
                 </div>
             )}
 
             <div className={cn(
                 "flex items-center justify-between",
-                type === "ASSIST" && "flex-row-reverse",
-                type === "SELECT" && "flex-col gap-3 text-center",
-                type === "SELECT" && !imageSrc && "flex-row justify-between"
+                type === "ASSIST" && "flex-row-reverse gap-4",
+                type === "SELECT" && "flex-col gap-3 items-center justify-center text-center",
+                type === "SELECT" && !imageSrc && "flex-row justify-between items-center"
             )}>
                 {type === "ASSIST" && <div />}
                 <p className={cn(
@@ -89,16 +82,18 @@ export const Card = ({
                     selected && "text-[#FF6F1F]",
                     selected && status === "correct" && "text-green-400",
                     selected && status === "incorrect" && "text-red-400",
-                    type === "SELECT" && "text-center flex-1"
+                    type === "SELECT" && "text-center w-full",
+                    type === "ASSIST" && "text-lg"
                 )}>
                     {text}
                 </p>
                 <div className={cn(
-                    "lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] border-2 flex items-center justify-center rounded-lg text-neutral-400 lg:text-[15px] text-xs font-semibold transition-colors duration-200",
+                    "lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] border-2 flex items-center justify-center rounded-lg text-neutral-400 lg:text-[15px] text-xs font-semibold transition-colors duration-300",
                     selected && "border-[#FF6F1F] text-[#FF6F1F]",
                     selected && status === "correct" && "border-green-400 text-green-400",
                     selected && status === "incorrect" &&  "border-red-400 text-red-400",
-                    type === "SELECT" && "mx-auto"
+                    type === "SELECT" && "mt-2",
+                    type === "ASSIST" && "lg:w-[35px] lg:h-[35px] lg:text-base"
                 )}>
                     {shortcut}
                 </div>

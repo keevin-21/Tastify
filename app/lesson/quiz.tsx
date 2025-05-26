@@ -193,7 +193,7 @@ export const Quiz = ({
     }
 
     const title = currentChallenge.type === "ASSIST"
-    ? "Select the correct answer"
+    ? "Fill in the blank"
     : currentChallenge.question;
 
     return (
@@ -210,25 +210,25 @@ export const Quiz = ({
                 <div className="h-full flex items-center justify-center py-8">
                     <div className={cn(
                         "lg:min-h-[350px] lg:w-[600px] w-full px-6 lg:px-0 flex flex-col bg-[#232323] rounded-xl shadow-lg border-2 border-[#2c2c2c]",
-                        currentChallenge.type === "SELECT" ? "gap-y-8 py-8" : "gap-y-12"
+                        currentChallenge.type === "SELECT" ? "gap-y-8 py-8" : "gap-y-6 py-6"
                     )}>
-                        {currentChallenge.type === "SELECT" ? (
-                            <div className="text-center py-4">
-                                <h1 className="text-xl lg:text-3xl font-bold text-[#f5f5f5] mb-2">
-                                    {title}
-                                </h1>
-                                <div className="w-16 h-1 bg-[#FF6F1F] mx-auto rounded-full"></div>
-                            </div>
-                        ) : (
-                            <h1 className="text-lg lg:text-3xl text-center lg:text-start font-bold text-[#f5f5f5]">
+                        <div className="text-center">
+                            <h1 className={cn(
+                                "text-xl lg:text-3xl font-bold text-[#f5f5f5] mb-2",
+                                currentChallenge.type === "ASSIST" && "text-lg lg:text-2xl"
+                            )}>
                                 {title}
                             </h1>
-                        )}
+                            <div className="w-16 h-1 bg-[#FF6F1F] mx-auto rounded-full"></div>
+                        </div>
                         <div className={cn(
-                            currentChallenge.type === "SELECT" && "px-4 lg:px-8"
+                            "px-4 lg:px-8",
+                            currentChallenge.type === "ASSIST" && "flex flex-col items-center"
                         )}>
                             {currentChallenge.type === "ASSIST" && (
-                                <QuestionBubble  question={currentChallenge.question} />
+                                <div className="w-full max-w-md mb-8">
+                                    <QuestionBubble question={currentChallenge.question} />
+                                </div>
                             )}
                             <Challenge
                                 options={options}
@@ -246,6 +246,7 @@ export const Quiz = ({
                 disabled={pending || !selectedOption}
                 status={status}
                 onCheck={onContinue}
+                lessonId={lessonId}
             />
         </div>
     );

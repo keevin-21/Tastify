@@ -289,9 +289,9 @@ const main = async () => {
       {
         id: 13,
         lessonId: 4,
-        type: "SELECT",
+        type: "ASSIST",
         order: 1,
-        question: "How many times should rice be washed before cooking?",
+        question: "Complete: Rice should be washed ____ times before cooking",
       },
       {
         id: 14,
@@ -310,9 +310,9 @@ const main = async () => {
       {
         id: 16,
         lessonId: 4,
-        type: "SELECT",
+        type: "ASSIST",
         order: 4,
-        question: "What is the ideal rice to water ratio for Japanese rice?",
+        question: "Complete: The rice to water ratio should be ____",
       },
 
       // Japanese Lesson 5: Simple Japanese Dishes & Presentation Basics
@@ -326,9 +326,9 @@ const main = async () => {
       {
         id: 18,
         lessonId: 5,
-        type: "SELECT",
+        type: "ASSIST",
         order: 2,
-        question: "How many colors should appear on a Japanese plate?",
+        question: "Complete: A Japanese plate should have ____ colors",
       },
       {
         id: 19,
@@ -460,9 +460,9 @@ const main = async () => {
       {
         id: 36,
         lessonId: 9,
-        type: "SELECT",
+        type: "ASSIST",
         order: 4,
-        question: "How thick should a tortilla be?",
+        question: "Complete: A tortilla should be ____ thick",
       },
 
       // Mexican Lesson 10: Simple Mexican Salsas & Basic Dishes
@@ -485,7 +485,7 @@ const main = async () => {
         lessonId: 10,
         type: "ASSIST",
         order: 3,
-        question: "Complete: Quesadillas are tortillas filled with ____",
+        question: "Complete: Quesadillas are filled with ____",
       },
       {
         id: 40,
@@ -566,9 +566,9 @@ const main = async () => {
       {
         id: 50,
         lessonId: 13,
-        type: "SELECT",
+        type: "ASSIST",
         order: 2,
-        question: "How much salt should be added to pasta water?",
+        question: "Complete: Pasta water should taste like ____",
       },
       {
         id: 51,
@@ -670,9 +670,9 @@ const main = async () => {
       {
         id: 64,
         lessonId: 16,
-        type: "SELECT",
+        type: "ASSIST",
         order: 4,
-        question: "How long should kimchi ferment minimum?",
+        question: "Complete: Kimchi needs at least ____ days to ferment",
       },
 
       // Korean Lesson 17: Basic Korean Cooking Tools & Rice Preparation
@@ -746,9 +746,9 @@ const main = async () => {
       {
         id: 74,
         lessonId: 19,
-        type: "SELECT",
+        type: "ASSIST",
         order: 2,
-        question: "How long should meat marinate for bulgogi?",
+        question: "Complete: Bulgogi should marinate for at least ____ hours",
       },
       {
         id: 75,
@@ -790,9 +790,9 @@ const main = async () => {
       {
         id: 80,
         lessonId: 20,
-        type: "SELECT",
+        type: "ASSIST",
         order: 4,
-        question: "How many banchan are typically served?",
+        question: "Complete: A Korean meal usually has ____ banchan dishes",
       },
     ]);
 
@@ -870,7 +870,7 @@ const main = async () => {
       { challengeId: 12, correct: true, text: "340°F", imageSrc: "/340f.jpg" },
       { challengeId: 12, correct: false, text: "400°F", imageSrc: "/400f.jpg" },
 
-      // Japanese Lesson 4 - Challenge 13: 3-4 times (correct in position 1)
+      // Japanese Lesson 4 - Challenge 13: Rice washing (change to ASSIST)
       { challengeId: 13, correct: true, text: "3-4 times", imageSrc: "/3_4_times.jpg" },
       { challengeId: 13, correct: false, text: "Once", imageSrc: "/once.jpg" },
       { challengeId: 13, correct: false, text: "10 times", imageSrc: "/10_times.jpg" },
@@ -888,7 +888,7 @@ const main = async () => {
       { challengeId: 15, correct: false, text: "rice", audioSrc: "/rice.mp3" },
       { challengeId: 15, correct: false, text: "corn", audioSrc: "/corn.mp3" },
 
-      // Japanese Lesson 4 - Challenge 16: 1:1 ratio (correct in position 3)
+      // Japanese Lesson 4 - Challenge 16: Rice ratio (change to ASSIST)
       { challengeId: 16, correct: false, text: "2:1", imageSrc: "/2_1.jpg" },
       { challengeId: 16, correct: false, text: "1:2", imageSrc: "/1_2.jpg" },
       { challengeId: 16, correct: true, text: "1:1", imageSrc: "/1_1.jpg" },
@@ -900,7 +900,7 @@ const main = async () => {
       { challengeId: 17, correct: false, text: "Udon soup", imageSrc: "/udon_soup.jpg" },
       { challengeId: 17, correct: false, text: "Clear soup", imageSrc: "/clear_soup.jpg" },
 
-      // Japanese Lesson 5 - Challenge 18: Five colors (correct in position 4)
+      // Japanese Lesson 5 - Challenge 18: Plate colors (change to ASSIST)
       { challengeId: 18, correct: false, text: "Three colors", imageSrc: "/three_colors.jpg" },
       { challengeId: 18, correct: false, text: "Four colors", imageSrc: "/four_colors.jpg" },
       { challengeId: 18, correct: false, text: "Six colors", imageSrc: "/six_colors.jpg" },
@@ -930,7 +930,7 @@ const main = async () => {
       { challengeId: 22, correct: false, text: "Serrano", imageSrc: "/serrano.jpg" },
       { challengeId: 22, correct: true, text: "Bell pepper", imageSrc: "/bell_pepper.jpg" },
 
-      // Mexican Lesson 6 - Challenge 23: Green (correct in position 2)
+      // Mexican Lesson 6 - Challenge 23: Jalapeño color (change to ASSIST)
       { challengeId: 23, correct: false, text: "red", audioSrc: "/red.mp3" },
       { challengeId: 23, correct: true, text: "green", audioSrc: "/green.mp3" },
       { challengeId: 23, correct: false, text: "yellow", audioSrc: "/yellow.mp3" },
@@ -954,7 +954,7 @@ const main = async () => {
       { challengeId: 26, correct: false, text: "Storing food", imageSrc: "/storing_food.jpg" },
       { challengeId: 26, correct: true, text: "Grinding spices", imageSrc: "/grinding_spices.jpg" },
 
-      // Mexican Lesson 7 - Challenge 27: Gradually (correct in position 2)
+      // Mexican Lesson 7 - Challenge 27: Comal heating (change to ASSIST)
       { challengeId: 27, correct: false, text: "quickly", audioSrc: "/quickly.mp3" },
       { challengeId: 27, correct: true, text: "gradually", audioSrc: "/gradually.mp3" },
       { challengeId: 27, correct: false, text: "never", audioSrc: "/never.mp3" },
@@ -978,7 +978,7 @@ const main = async () => {
       { challengeId: 30, correct: false, text: "Julienned", imageSrc: "/julienned.jpg" },
       { challengeId: 30, correct: true, text: "Diced", imageSrc: "/diced.jpg" },
 
-      // Mexican Lesson 8 - Challenge 31: Charred (correct in position 2)
+      // Mexican Lesson 8 - Challenge 31: Tomato preparation (change to ASSIST)
       { challengeId: 31, correct: false, text: "boiled", audioSrc: "/boiled.mp3" },
       { challengeId: 31, correct: true, text: "charred", audioSrc: "/charred.mp3" },
       { challengeId: 31, correct: false, text: "steamed", audioSrc: "/steamed.mp3" },
@@ -1002,13 +1002,13 @@ const main = async () => {
       { challengeId: 34, correct: false, text: "Crumbly", imageSrc: "/crumbly.jpg" },
       { challengeId: 34, correct: true, text: "Soft and pliable", imageSrc: "/soft_pliable.jpg" },
 
-      // Mexican Lesson 9 - Challenge 35: Oil (correct in position 2)
+      // Mexican Lesson 9 - Challenge 35: Tortilla cooking (change to ASSIST)
       { challengeId: 35, correct: false, text: "salt", audioSrc: "/salt.mp3" },
       { challengeId: 35, correct: true, text: "oil", audioSrc: "/oil.mp3" },
       { challengeId: 35, correct: false, text: "butter", audioSrc: "/butter.mp3" },
       { challengeId: 35, correct: false, text: "water", audioSrc: "/water.mp3" },
 
-      // Mexican Lesson 9 - Challenge 36: 2-3mm (correct in position 3)
+      // Mexican Lesson 9 - Challenge 36: Tortilla thickness (change to ASSIST)
       { challengeId: 36, correct: false, text: "1mm", imageSrc: "/1mm.jpg" },
       { challengeId: 36, correct: false, text: "5mm", imageSrc: "/5mm.jpg" },
       { challengeId: 36, correct: true, text: "2-3mm", imageSrc: "/2_3mm.jpg" },
@@ -1026,7 +1026,7 @@ const main = async () => {
       { challengeId: 38, correct: false, text: "Enchilada", imageSrc: "/enchilada.jpg" },
       { challengeId: 38, correct: true, text: "Quesadilla", imageSrc: "/quesadilla.jpg" },
 
-      // Mexican Lesson 10 - Challenge 39: Cheese (correct in position 2)
+      // Mexican Lesson 10 - Challenge 39: Quesadilla filling (change to ASSIST)
       { challengeId: 39, correct: false, text: "meat", audioSrc: "/meat.mp3" },
       { challengeId: 39, correct: true, text: "cheese", audioSrc: "/cheese.mp3" },
       { challengeId: 39, correct: false, text: "beans", audioSrc: "/beans.mp3" },
@@ -1077,7 +1077,7 @@ const main = async () => {
       { challengeId: 46, correct: true, text: "Torn by hand", imageSrc: "/torn_hand.jpg" },
       { challengeId: 46, correct: false, text: "Minced", imageSrc: "/minced.jpg" },
 
-      // Italian Lesson 12 - Challenge 47: Salt and pepper (correct in position 1)
+      // Italian Lesson 12 - Challenge 47: Seasoning (change to ASSIST)
       { challengeId: 47, correct: true, text: "salt and pepper", audioSrc: "/salt_pepper.mp3" },
       { challengeId: 47, correct: false, text: "sugar", audioSrc: "/sugar.mp3" },
       { challengeId: 47, correct: false, text: "vinegar", audioSrc: "/vinegar.mp3" },
@@ -1095,23 +1095,23 @@ const main = async () => {
       { challengeId: 49, correct: false, text: "Hard", imageSrc: "/hard.jpg" },
       { challengeId: 49, correct: false, text: "Mushy", imageSrc: "/mushy.jpg" },
 
-      // Italian Lesson 13 - Challenge 50: Like sea water (correct in position 3)
+      // Italian Lesson 13 - Challenge 50: Pasta water (change to ASSIST)
       { challengeId: 50, correct: false, text: "No salt", imageSrc: "/no_salt.jpg" },
       { challengeId: 50, correct: false, text: "A pinch", imageSrc: "/pinch.jpg" },
       { challengeId: 50, correct: true, text: "Like sea water", imageSrc: "/sea_water.jpg" },
       { challengeId: 50, correct: false, text: "Very salty", imageSrc: "/very_salty.jpg" },
 
-      // Italian Lesson 13 - Challenge 51: To the tooth (correct in position 1)
+      // Italian Lesson 13 - Challenge 51: Al dente meaning (change to ASSIST)
       { challengeId: 51, correct: true, text: "to the tooth", audioSrc: "/to_tooth.mp3" },
       { challengeId: 51, correct: false, text: "very soft", audioSrc: "/very_soft.mp3" },
       { challengeId: 51, correct: false, text: "hard", audioSrc: "/hard.mp3" },
       { challengeId: 51, correct: false, text: "overcooked", audioSrc: "/overcooked.mp3" },
 
-      // Italian Lesson 13 - Challenge 52: Never (correct in position 4)
-      { challengeId: 52, correct: false, text: "Always", imageSrc: "/always.jpg" },
-      { challengeId: 52, correct: false, text: "Sometimes", imageSrc: "/sometimes.jpg" },
-      { challengeId: 52, correct: false, text: "Before boiling", imageSrc: "/before_boil.jpg" },
-      { challengeId: 52, correct: true, text: "Never", imageSrc: "/never.jpg" },
+      // Italian Lesson 14 - Challenge 52: At the end (correct in position 3)
+      { challengeId: 52, correct: false, text: "At the beginning", imageSrc: "/beginning.jpg" },
+      { challengeId: 52, correct: false, text: "In the middle", imageSrc: "/middle.jpg" },
+      { challengeId: 52, correct: true, text: "At the end", imageSrc: "/end.jpg" },
+      { challengeId: 52, correct: false, text: "Never", imageSrc: "/never.jpg" },
 
       // Italian Lesson 14 - Challenge 53: Aglio e olio (correct in position 2)
       { challengeId: 53, correct: false, text: "Carbonara", imageSrc: "/carbonara.jpg" },
@@ -1197,7 +1197,7 @@ const main = async () => {
       { challengeId: 66, correct: true, text: "Grill grates", imageSrc: "/grill_grates.jpg" },
       { challengeId: 66, correct: false, text: "Steamer", imageSrc: "/steamer.jpg" },
 
-      // Korean Lesson 17 - Challenge 67: Clear (correct in position 1)
+      // Korean Lesson 17 - Challenge 67: Rice washing (change to ASSIST)
       { challengeId: 67, correct: true, text: "clear", audioSrc: "/clear.mp3" },
       { challengeId: 67, correct: false, text: "cloudy", audioSrc: "/cloudy.mp3" },
       { challengeId: 67, correct: false, text: "dirty", audioSrc: "/dirty.mp3" },
@@ -1221,7 +1221,7 @@ const main = async () => {
       { challengeId: 70, correct: true, text: "Julienned", imageSrc: "/julienned.jpg" },
       { challengeId: 70, correct: false, text: "Minced", imageSrc: "/minced.jpg" },
 
-      // Korean Lesson 18 - Challenge 71: Sour (correct in position 1)
+      // Korean Lesson 18 - Challenge 71: Flavor balance (change to ASSIST)
       { challengeId: 71, correct: true, text: "sour", audioSrc: "/sour.mp3" },
       { challengeId: 71, correct: false, text: "bitter", audioSrc: "/bitter.mp3" },
       { challengeId: 71, correct: false, text: "umami", audioSrc: "/umami.mp3" },
@@ -1239,19 +1239,19 @@ const main = async () => {
       { challengeId: 73, correct: false, text: "Orange", imageSrc: "/orange.jpg" },
       { challengeId: 73, correct: false, text: "Pineapple", imageSrc: "/pineapple.jpg" },
 
-      // Korean Lesson 19 - Challenge 74: 4 hours (correct in position 3)
+      // Korean Lesson 19 - Challenge 74: Bulgogi marination (change to ASSIST)
       { challengeId: 74, correct: false, text: "30 minutes", imageSrc: "/30_minutes.jpg" },
       { challengeId: 74, correct: false, text: "2 hours", imageSrc: "/2_hours.jpg" },
       { challengeId: 74, correct: true, text: "4 hours", imageSrc: "/4_hours.jpg" },
       { challengeId: 74, correct: false, text: "24 hours", imageSrc: "/24_hours.jpg" },
 
-      // Korean Lesson 19 - Challenge 75: Fire meat (correct in position 1)
-      { challengeId: 75, correct: true, text: "fire meat", audioSrc: "/fire_meat.mp3" },
+      // Korean Lesson 19 - Challenge 75: Bulgogi meaning (change to ASSIST)
+      { challengeId: 75, correct: false, text: "fire meat", audioSrc: "/fire_meat.mp3" },
       { challengeId: 75, correct: false, text: "sweet meat", audioSrc: "/sweet_meat.mp3" },
-      { challengeId: 75, correct: false, text: "grilled meat", audioSrc: "/grilled_meat.mp3" },
+      { challengeId: 75, correct: true, text: "grilled meat", audioSrc: "/grilled_meat.mp3" },
       { challengeId: 75, correct: false, text: "marinated meat", audioSrc: "/marinated_meat.mp3" },
 
-      // Korean Lesson 19 - Challenge 76: Ribeye (correct in position 4)
+      // Korean Lesson 20 - Challenge 76: Ribeye (correct in position 4)
       { challengeId: 76, correct: false, text: "Chicken", imageSrc: "/chicken.jpg" },
       { challengeId: 76, correct: false, text: "Pork", imageSrc: "/pork.jpg" },
       { challengeId: 76, correct: false, text: "Ground beef", imageSrc: "/ground_beef.jpg" },
@@ -1275,7 +1275,7 @@ const main = async () => {
       { challengeId: 79, correct: false, text: "steamed rice", audioSrc: "/steamed_rice.mp3" },
       { challengeId: 79, correct: false, text: "rice bowl", audioSrc: "/rice_bowl.mp3" },
 
-      // Korean Lesson 20 - Challenge 80: 3-5 (correct in position 4)
+      // Korean Lesson 20 - Challenge 80: Bibimbap meaning (change to ASSIST)
       { challengeId: 80, correct: false, text: "2", imageSrc: "/2.jpg" },
       { challengeId: 80, correct: false, text: "6-8", imageSrc: "/6_8.jpg" },
       { challengeId: 80, correct: false, text: "10-12", imageSrc: "/10_12.jpg" },

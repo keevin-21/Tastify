@@ -56,28 +56,13 @@ export const Footer = () => {
                     className="text-[#f5f5f5] w-full hover:scale-105 transition-all duration-300"
                 >
                     <Image
-                        src="/ch.svg"
-                        alt="CHINESE"
+                        src="/kr.svg"
+                        alt="KOREAN"
                         height={32}
                         width={40}
                         className="mr-4 rounded-md"
                     />
-                    Chinese
-                </Button>
-
-                <Button 
-                    size="lg" 
-                    variant="ghost" 
-                    className="text-[#f5f5f5] w-full hover:scale-105 transition-all duration-300"
-                >
-                    <Image
-                        src="/es.svg"
-                        alt="SPANISH"
-                        height={32}
-                        width={40}
-                        className="mr-4 rounded-md"
-                    />
-                    Spanish
+                    Korean
                 </Button>
             </div>
         </footer>
