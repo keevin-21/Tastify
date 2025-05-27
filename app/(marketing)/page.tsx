@@ -5,9 +5,9 @@ import { ClerkLoaded, ClerkLoading, SignedOut, SignedIn, SignUpButton, SignInBut
 import { Loader } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ChefHat, Globe2, Trophy, Heart, Sparkles, BookOpen } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 const features = [
   {
@@ -62,15 +62,16 @@ export default function Home() {
   const { scrollY } = useScroll();
   const heroRef = useRef(null);
 
-  // Animaciones para el hero
+  // Enhanced animations for the hero
   const heroScale = useTransform(scrollY, [0, 300], [1, 0.8]);
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
   const heroY = useTransform(scrollY, [0, 300], [0, 100]);
+  const heroRotate = useTransform(scrollY, [0, 300], [0, -10]);
 
   return (
-    <div className="bg-[#1e1e1e] w-full min-h-screen">
+    <div className="bg-[#1e1e1e] w-full min-h-screen relative overflow-hidden">
       {/* Hero Section */}
-      <section className="max-w-[1200px] mx-auto flex-1 w-full flex flex-col lg:flex-row items-center justify-between p-8 gap-8 min-h-screen">
+      <section className="max-w-[1200px] mx-auto flex-1 w-full flex flex-col lg:flex-row items-center justify-between p-8 gap-8 min-h-screen relative">
         <motion.div 
           className="flex flex-col gap-6 lg:max-w-[50%]"
           initial={{ opacity: 0, x: -100 }}
@@ -87,11 +88,27 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            Learn to Cook Like a <motion.span 
-              className="text-[#FF6F1F]"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >World Chef</motion.span>
+            Learn to Cook Like a{" "}
+            <motion.div 
+              className="inline-block"
+              animate={{ 
+                scale: [1, 1.2, 1],
+                rotate: [0, 5, 0]
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatDelay: 3
+              }}
+            >
+              <motion.span 
+                className="text-[#FF6F1F] inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#FF6F1F] to-[#FF8F1F]"
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                World Chef
+              </motion.span>
+            </motion.div>
           </motion.h1>
           <motion.p 
             className="text-xl text-neutral-400"
@@ -151,7 +168,8 @@ export default function Home() {
           style={{
             scale: heroScale,
             opacity: heroOpacity,
-            y: heroY
+            y: heroY,
+            rotate: heroRotate
           }}
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ 
@@ -182,28 +200,17 @@ export default function Home() {
             className="object-contain"
             priority
           />
-          <motion.div
-            className="absolute inset-0 bg-[#FF6F1F] rounded-full filter blur-3xl"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 0.15, 0] }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              repeatType: "reverse"
-            }}
-            style={{ zIndex: -1 }}
-          />
         </motion.div>
       </section>
 
-      {/* Features Section con scroll animations */}
+      {/* Features Section with enhanced animations */}
       <motion.section 
-        className="bg-[#2c2c2c] py-20"
+        className="bg-[#2c2c2c] py-20 relative overflow-hidden"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-100px" }}
       >
-        <div className="max-w-[1200px] mx-auto px-8">
+        <div className="max-w-[1200px] mx-auto px-8 relative">
           <motion.h2 
             className="text-3xl lg:text-4xl font-bold text-center text-[#f5f5f5] mb-12"
             initial={{ opacity: 0, y: 50 }}
@@ -211,13 +218,27 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Why Choose <span className="text-[#FF6F1F]">Tastify</span>
+            Why Choose{" "}
+            <motion.span 
+              className="text-[#FF6F1F]"
+              animate={{
+                color: ['#FF6F1F', '#FF8F1F', '#FF6F1F'],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              Tastify
+            </motion.span>
           </motion.h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
-                className="bg-[#1e1e1e] p-6 rounded-xl hover:bg-[#252525] transition-colors duration-300"
+                className="bg-[#1e1e1e] p-6 rounded-xl hover:bg-[#252525] transition-colors duration-300 relative group"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -227,7 +248,17 @@ export default function Home() {
                   transition: { duration: 0.2 }
                 }}
               >
-                <feature.icon className="w-12 h-12 text-[#FF6F1F] mb-4" />
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-br from-[#FF6F1F] to-transparent opacity-0 group-hover:opacity-5 rounded-xl"
+                  initial={false}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.div
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <feature.icon className="w-12 h-12 text-[#FF6F1F] mb-4" />
+                </motion.div>
                 <h3 className="text-xl font-bold text-[#f5f5f5] mb-2">{feature.title}</h3>
                 <p className="text-neutral-400">{feature.description}</p>
               </motion.div>
@@ -256,7 +287,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <Image src="/learn.png" fill alt="Learn" className="object-cover" />
+              <Image src="/learn_screen.png" fill alt="Learn" className="object-cover" />
             </motion.div>
             <motion.div
               className="relative h-[300px] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300"
@@ -265,7 +296,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <Image src="/quests.png" fill alt="Quests" className="object-cover" />
+              <Image src="/quests_screen.png" fill alt="Quests" className="object-cover" />
             </motion.div>
             <motion.div
               className="relative h-[300px] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300"
@@ -274,7 +305,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Image src="/leaderboard.png" fill alt="Leaderboard" className="object-cover" />
+              <Image src="/leaderboard_screen.png" fill alt="Leaderboard" className="object-cover" />
             </motion.div>
           </div>
         </div>

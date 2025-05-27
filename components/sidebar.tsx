@@ -27,19 +27,28 @@ export const Sidebar = ({ className }: Props) => {
 
     return (
         <div className={cn(
-            "flex bg-[#2c2c2c] border-[#2c2c2c] h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 border-r-2 flex-col",
+            "flex bg-gradient-to-b from-[#2c2c2c] to-[#252525] border-r border-[#3c3c3c] h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 flex-col shadow-xl",
             className
         )}>
             <Link href="/learn">
-                <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
-                    <Image src="/mascot.png" height={40} width={40} alt="Mascot" />
-                    <h1 className="text 2xl font-extrabold text-[#f5f5f5]">
+                <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3 group transition-transform hover:scale-[0.98]">
+                    <div className="relative">
+                        <div className="absolute inset-0 bg-orange-500/20 rounded-full blur-md" />
+                        <Image 
+                            src="/mascot.png" 
+                            height={40} 
+                            width={40} 
+                            alt="Mascot"
+                            className="relative z-10"
+                        />
+                    </div>
+                    <h1 className="text-2xl font-extrabold bg-gradient-to-r from-[#f5f5f5] to-[#e5e5e5] text-transparent bg-clip-text">
                         Tastify
                     </h1>
                 </div>
             </Link>
             
-            <div className="flex flex-col gap-y-2 flex-1">
+            <div className="flex flex-col gap-y-3 flex-1 px-2">
                 <SidebarItem
                     label="Learn"
                     href="/learn"
@@ -65,20 +74,20 @@ export const Sidebar = ({ className }: Props) => {
                 />
             </div>
             
-            <div className="p-4">
+            <div className="p-4 mt-auto border-t border-[#3c3c3c]">
                 <ClerkLoading>
                     <Loader className="h-5 w-5 text-muted-foreground animate-spin" />
                 </ClerkLoading>
                 <ClerkLoaded>
                     <SignedIn>
                         <div className="flex flex-col gap-y-4">
-                            <div className="flex items-center gap-x-3 px-2">
+                            <div className="flex items-center gap-x-3 px-2 group transition-transform hover:scale-[0.98]">
                                 <UserButton 
                                     afterSignOutUrl="/"
                                     appearance={{
                                         elements: {
-                                            avatarBox: "h-[48px] w-[48px]",
-                                            userButtonPopoverCard: "bg-[#2c2c2c] border-[#3c3c3c]",
+                                            avatarBox: "h-[48px] w-[48px] ring-2 ring-[#3c3c3c] ring-offset-2 ring-offset-[#2c2c2c]",
+                                            userButtonPopoverCard: "bg-[#2c2c2c] border-[#3c3c3c] shadow-xl",
                                             userButtonPopoverText: "text-[#f5f5f5]",
                                             userButtonPopoverActionButton: "hover:bg-[#3c3c3c] hover:text-[#f5f5f5]",
                                             userButtonPopoverActionButtonText: "text-[#f5f5f5]",
@@ -93,10 +102,10 @@ export const Sidebar = ({ className }: Props) => {
                             </div>
                             <Button
                                 variant="ghost"
-                                className="justify-start h-[48px] text-[#f5f5f5] hover:bg-[#3c3c3c] hover:text-white transition-colors"
+                                className="justify-start h-[48px] text-[#f5f5f5] hover:bg-[#3c3c3c]/50 hover:text-white transition-all group"
                                 onClick={handleSignOut}
                             >
-                                <LogOut className="mr-3 h-5 w-5" />
+                                <LogOut className="mr-3 h-5 w-5 transition-transform group-hover:scale-110 group-hover:text-red-400" />
                                 Sign Out
                             </Button>
                         </div>

@@ -16,7 +16,6 @@ const LearnPage = async () => {
     const userSubscriptionPromise = getUserSubscription();
     const questProgressPromise = getQuestProgress();
     
-
     const [
         userProgress,
         units,
@@ -44,39 +43,47 @@ const LearnPage = async () => {
     const isPremium = !!userSubscription?.isActive;
 
     return (
-        <div className="flex flex-row-reverse gap-[48px] px-6">
-            <StickyWrapper /*i can use flex-row-reverse here*/>
-                <UserProgress
-                    activeCourse={userProgress.activeCourse}
-                    hearts={userProgress.hearts}
-                    points={userProgress.points}
-                    hasActiveSuscription={isPremium}
-                    streak={userProgress.streakCount}
-                />
-                {!isPremium && (
-                    <Promo />
-                )}
-                <Quests 
-                    points={userProgress.points} 
-                    questProgress={questProgress}
-                />
+        <div className="flex flex-row-reverse gap-[48px] px-6 py-6 min-h-screen bg-[#1e1e1e]">
+            <StickyWrapper>
+                <div className="space-y-4">
+                    <UserProgress
+                        activeCourse={userProgress.activeCourse}
+                        hearts={userProgress.hearts}
+                        points={userProgress.points}
+                        hasActiveSuscription={isPremium}
+                        streak={userProgress.streakCount}
+                    />
+                    {!isPremium && (
+                        <div className="overflow-hidden">
+                            <Promo />
+                        </div>
+                    )}
+                    <Quests 
+                        points={userProgress.points} 
+                        questProgress={questProgress}
+                    />
+                </div>
             </StickyWrapper>
             
-            <FeedWrapper /*and here*/>
-                <Header title={userProgress.activeCourse.title} />
-                { units.map((unit) => (
-                    <div key={unit.id} className="mb-10">
-                        <Unit
-                            id={unit.id}
-                            order={unit.order}
-                            description={unit.description}
-                            title={unit.title}
-                            lessons={unit.lessons}
-                            activeLesson={courseProgress.activeLesson}
-                            activeLessonPercent={lessonPercent}
-                        />
+            <FeedWrapper>
+                <div className="space-y-8">
+                    <Header title={userProgress.activeCourse.title} />
+                    <div className="space-y-8">
+                        {units.map((unit) => (
+                            <div key={unit.id}>
+                                <Unit
+                                    id={unit.id}
+                                    order={unit.order}
+                                    description={unit.description}
+                                    title={unit.title}
+                                    lessons={unit.lessons}
+                                    activeLesson={courseProgress.activeLesson}
+                                    activeLessonPercent={lessonPercent}
+                                />
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </div>
             </FeedWrapper>
         </div>
     );
