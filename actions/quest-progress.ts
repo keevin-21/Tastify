@@ -1,11 +1,21 @@
 "use server";
 
 import { auth } from "@clerk/nextjs/server";
-import { and, eq } from "drizzle-orm";
+import { and, eq, lt } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
 import db from "@/db/drizzle";
 import { questProgress, userProgress } from "@/db/schema";
+
+const isQuestExpired = (completedAt: Date) => {
+    const now = new Date();
+    const completedDate = new Date(completedAt);
+    
+    const resetDate = new Date(now);
+    resetDate.setUTCHours(0, 0, 0, 0);
+    
+    return completedDate < resetDate;
+};
 
 export const getQuestProgress = async () => {
     const { userId } = await auth();
@@ -18,39 +28,52 @@ export const getQuestProgress = async () => {
         where: eq(questProgress.userId, userId),
     });
 
-    return data;
+    const activeQuests = data.filter(quest => 
+        !quest.completedAt || !isQuestExpired(quest.completedAt)
+    );
+
+    return activeQuests;
 };
 
-export const upsertQuestProgress = async (questId: number) => {
+export const resetAllQuests = async () => {
+    try {
+        // Delete all quest progress records
+        await db.delete(questProgress);
+
+        // Revalidate all relevant paths
+        revalidatePath("/quests");
+        revalidatePath("/learn");
+        revalidatePath("/leaderboard");
+
+        return { success: true };
+    } catch (error) {
+        console.error("Error resetting all quests:", error);
+        return { error: "Failed to reset quests" };
+    }
+};
+
+export const resetExpiredQuests = async () => {
     const { userId } = await auth();
 
     if (!userId) {
         throw new Error("Unauthorized");
     }
 
-    const existingProgress = await db.query.questProgress.findFirst({
-        where: and(
-            eq(questProgress.userId, userId),
-            eq(questProgress.questId, questId),
-        ),
-    });
+    const now = new Date();
+    const resetDate = new Date(now);
+    resetDate.setUTCHours(0, 0, 0, 0);
 
-    if (existingProgress) {
-        // Quest already completed
-        return { error: "Quest already completed" };
-    }
-
-    await db.insert(questProgress).values({
-        userId,
-        questId,
-        completed: true,
-        completedAt: new Date(),
-    });
+    // Delete expired quest progress
+    await db.delete(questProgress)
+        .where(
+            and(
+                eq(questProgress.userId, userId),
+                lt(questProgress.completedAt!, resetDate)
+            )
+        );
 
     revalidatePath("/quests");
     revalidatePath("/learn");
-
-    return { success: true };
 };
 
 export const claimQuestReward = async (questId: number, rewardPoints: number) => {
@@ -62,8 +85,6 @@ export const claimQuestReward = async (questId: number, rewardPoints: number) =>
             return { error: "Unauthorized" };
         }
 
-        console.log("Starting quest claim process:", { userId, questId, rewardPoints });
-
         // Check if quest is already completed (double-check to prevent race conditions)
         const existingProgress = await db.query.questProgress.findFirst({
             where: and(
@@ -73,8 +94,15 @@ export const claimQuestReward = async (questId: number, rewardPoints: number) =>
         });
 
         if (existingProgress) {
-            console.log("Quest already completed:", existingProgress);
-            return { error: "Quest already completed" };
+            // Check if the quest has expired
+            if (existingProgress.completedAt && isQuestExpired(existingProgress.completedAt)) {
+                // Delete expired quest progress
+                await db.delete(questProgress)
+                    .where(eq(questProgress.id, existingProgress.id));
+            } else {
+                console.log("Quest already completed and still active:", existingProgress);
+                return { error: "Quest already completed" };
+            }
         }
 
         // Get current user progress
@@ -87,12 +115,6 @@ export const claimQuestReward = async (questId: number, rewardPoints: number) =>
             return { error: "User progress not found" };
         }
 
-        console.log("Current user progress:", { 
-            currentPoints: currentUserProgress.points, 
-            newPoints: currentUserProgress.points + rewardPoints 
-        });
-
-        // Since neon-http doesn't support transactions, we'll do operations sequentially
         // First, mark quest as completed
         const completedQuest = await db.insert(questProgress).values({
             userId,
@@ -100,8 +122,6 @@ export const claimQuestReward = async (questId: number, rewardPoints: number) =>
             completed: true,
             completedAt: new Date(),
         }).returning();
-
-        console.log("Quest marked as completed:", completedQuest);
 
         // Then update user points
         const updatedUser = await db
@@ -112,14 +132,10 @@ export const claimQuestReward = async (questId: number, rewardPoints: number) =>
             .where(eq(userProgress.userId, userId))
             .returning();
 
-        console.log("Updated user points:", updatedUser);
-
         const newPoints = currentUserProgress.points + rewardPoints;
 
         revalidatePath("/quests");
         revalidatePath("/learn");
-
-        console.log("Quest claim successful, new points:", newPoints);
 
         return { 
             success: true, 

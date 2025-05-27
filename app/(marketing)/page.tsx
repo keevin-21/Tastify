@@ -129,7 +129,7 @@ export default function Home() {
             </ClerkLoading>
             <ClerkLoaded>
               <SignedOut>
-                <SignUpButton mode="modal" fallbackRedirectUrl="/learn">
+                <SignUpButton mode="modal" fallbackRedirectUrl="/courses">
                   <Button 
                     size="lg" 
                     variant="secondary" 
@@ -375,7 +375,7 @@ export default function Home() {
               className="text-lg px-12 hover:scale-105 transition-transform"
               asChild
             >
-              <Link href="/learn">Join Our Community</Link>
+              <Link href="https://github.com/keevin-21/Tastify" target="_blank">Join Our Community</Link>
             </Button>
           </motion.div>
         </div>
@@ -410,7 +410,7 @@ export default function Home() {
           >
             <ClerkLoaded>
               <SignedOut>
-                <SignUpButton mode="modal" fallbackRedirectUrl="/learn">
+                <SignUpButton mode="modal" fallbackRedirectUrl="/courses">
                   <Button size="lg" variant="secondary" className="text-lg px-12">
                     Start Learning Now
                   </Button>

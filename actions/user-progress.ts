@@ -38,7 +38,7 @@ export const upsertUserProgress = async (courseId: number) => {
         revalidatePath("/courses");
         revalidatePath("/learn");
         revalidatePath("/leaderboard");
-        redirect("/learn")
+        redirect("/courses")
     }
 
     // Generate a unique username for new users
@@ -55,7 +55,7 @@ export const upsertUserProgress = async (courseId: number) => {
     revalidatePath("/courses");
     revalidatePath("/learn");
     revalidatePath("/leaderboard");
-    redirect("/learn")
+    redirect("/courses")
 };
 
 export const reduceHearts = async (challengeId: number) => {

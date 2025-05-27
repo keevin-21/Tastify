@@ -57,7 +57,7 @@ export const Header = () => {
                     <SignedOut>
                         <SignInButton
                             mode="modal"
-                            fallbackRedirectUrl="/learn"
+                            fallbackRedirectUrl="/courses"
                             >
                                 <Button 
                                     size="lg" 

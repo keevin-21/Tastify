@@ -90,8 +90,8 @@ export const CloudinaryImage = ({
         }}
         onError={() => {
           if (isMounted) {
-            setHasError(true);
-            setIsLoading(false);
+          setHasError(true);
+          setIsLoading(false);
           }
         }}
         // Cloudinary optimizations

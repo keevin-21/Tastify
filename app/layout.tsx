@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Tastify",
   description: "The new way to learn about cuisines around the world",
   icons: {
-    icon: "mascot.png"
+    icon: "/favicon.ico"
   }
 };
 

@@ -6,19 +6,19 @@ export const QUESTS = [
         value: 100,
     },
     {
-        title: "Earn 250 points",
-        value: 250,
-    },
-    {
         title: "Earn 500 points",
         value: 500,
     },
     {
-        title: "Earn 750 points",
-        value: 750,
+        title: "Earn 1500 points",
+        value: 1500,
     },
     {
-        title: "Earn 1000 points",
-        value: 1000,
+        title: "Earn 5000 points",
+        value: 5000,
+    },
+    {
+        title: "Earn 10000 points",
+        value: 10000,
     },
 ]

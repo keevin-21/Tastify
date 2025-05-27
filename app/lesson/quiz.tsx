@@ -17,6 +17,7 @@ import Confetti from "react-confetti";
 import { useHeartsModal } from "@/store/use-hearts-modal";
 import { usePracticeModal } from "@/store/use-practice-modal";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion"
 
 type Props = {
     initialPercent: number;
@@ -157,30 +158,69 @@ export const Quiz = ({
                 />
                 <div className="flex flex-col min-h-screen">
                     <div className="flex-1 flex items-center justify-center">
-                        <div className="flex flex-col gap-y-4 lg:gap-y-8 max-w-lg mx-auto text-center items-center justify-center text-white rounded-xl shadow-lg p-6">
-                            <Image
-                                src="/finish.svg"
-                                alt="finish"
-                                width={100}
-                                height={100}
-                            />
+                        <motion.div 
+                            className="flex flex-col gap-y-4 lg:gap-y-8 max-w-lg mx-auto text-center items-center justify-center text-white rounded-xl p-6"
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.5,
+                                type: "spring",
+                                stiffness: 260,
+                                damping: 20
+                            }}
+                        >
+                            <motion.div
+                                initial={{ scale: 0 }}
+                                animate={{ scale: 1 }}
+                                transition={{
+                                    delay: 0.5,
+                                    type: "spring",
+                                    stiffness: 260,
+                                    damping: 20
+                                }}
+                            >
+                                <Image
+                                    src="/finish.svg"
+                                    alt="finish"
+                                    width={100}
+                                    height={100}
+                                    className="animate-bounce"
+                                />
+                            </motion.div>
 
-                            <h1 className="text-xl lg:text-3xl font-bold text-white">
+                            <motion.h1 
+                                className="text-xl lg:text-3xl font-bold text-white"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.7, duration: 0.5 }}
+                            >
                                 Great Job! <br />
-                                You finished the lesson!
-                            </h1>
+                                <motion.span
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 1, duration: 0.5 }}
+                                    className="bg-gradient-to-r from-[#FF6F1F] to-[#FF8F1F] text-transparent bg-clip-text"
+                                >
+                                    You finished the lesson!
+                                </motion.span>
+                            </motion.h1>
                             
-                            <div className="flex items-center justify-center gap-x-4 w-full">
+                            <motion.div 
+                                className="flex items-center justify-center gap-x-4 w-full"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 1.2, duration: 0.5 }}
+                            >
                                 <ResultCard
                                     variant="points"
                                     value={challenges.length * 10}
                                 />
                                 <ResultCard
                                     variant="hearts"
-                                    value={hearts}
+                                    value={userSubscription?.isActive ? -1 : hearts}
                                 />
-                            </div>
-                        </div>
+                            </motion.div>
+                        </motion.div>
                     </div>
                     <Footer
                         lessonId={lessonId}
