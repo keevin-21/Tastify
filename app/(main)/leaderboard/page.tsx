@@ -128,7 +128,7 @@ const LeaderboardPage = async () => {
                                             </span>
                                         </p>
                                         {userProgress.isPremium && (
-                                            <div className="flex items-center gap-1 bg-gradient-to-r from-amber-200 to-yellow-400 text-black text-xs px-2 py-0.5 rounded-full font-medium">
+                                            <div className="flex items-center gap-x-1 bg-orange-500/10 px-2 py-0.5 text-xs text-orange-500 font-semibold rounded-full">
                                                 <Crown className="w-3 h-3" />
                                                 <span>PRO</span>
                                             </div>

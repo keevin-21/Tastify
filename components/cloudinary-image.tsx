@@ -1,7 +1,7 @@
 "use client";
 
 import { CldImage } from 'next-cloudinary';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 type Props = {
@@ -12,6 +12,7 @@ type Props = {
   className?: string;
   priority?: boolean;
   sizes?: string;
+  folder?: string;
 };
 
 export const CloudinaryImage = ({
@@ -21,24 +22,39 @@ export const CloudinaryImage = ({
   height,
   className,
   priority = false,
-  sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+  sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+  folder = "challenge_options"
 }: Props) => {
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+    return () => setIsMounted(false);
+  }, []);
 
   // Extract public ID from src (remove file extension and leading slash)
   const getPublicId = (src: string) => {
     if (src.startsWith('http')) {
-      // If it's already a full URL, extract the public ID
-      const parts = src.split('/');
-      const filename = parts[parts.length - 1];
-      return filename.replace(/\.[^/.]+$/, '');
+      // If it's already a full URL, extract the public ID from the path
+      const url = new URL(src);
+      const pathParts = url.pathname.split('/');
+      // Find the index after 'upload' and join the rest
+      const uploadIndex = pathParts.indexOf('upload');
+      if (uploadIndex !== -1 && uploadIndex + 2 < pathParts.length) {
+        // Skip the version number and start from the folder
+        return pathParts.slice(uploadIndex + 2).join('/').replace(/\.[^/.]+$/, '');
+      }
+      return pathParts[pathParts.length - 1].replace(/\.[^/.]+$/, '');
     }
-    // If it's a local path, convert to public ID
-    return src.replace(/^\//, '').replace(/\.[^/.]+$/, '');
+    // If it's a local path, convert to public ID and include the folder
+    return `tastify/${folder}/${src.replace(/^\//, '').replace(/\.[^/.]+$/, '')}`;
   };
 
   const publicId = getPublicId(src);
+
+  if (!isMounted) return null;
 
   if (hasError) {
     return (
@@ -67,10 +83,16 @@ export const CloudinaryImage = ({
           "object-contain transition-opacity duration-300",
           isLoading ? "opacity-0" : "opacity-100"
         )}
-        onLoad={() => setIsLoading(false)}
+        onLoad={() => {
+          if (isMounted) {
+            setIsLoading(false);
+          }
+        }}
         onError={() => {
-          setHasError(true);
-          setIsLoading(false);
+          if (isMounted) {
+            setHasError(true);
+            setIsLoading(false);
+          }
         }}
         // Cloudinary optimizations
         quality="auto"
@@ -79,7 +101,7 @@ export const CloudinaryImage = ({
         gravity="center"
       />
       
-      {isLoading && (
+      {isLoading && isMounted && (
         <div 
           className="absolute inset-0 flex items-center justify-center bg-gray-100 animate-pulse"
         >

@@ -261,6 +261,12 @@ export const getLeaderboardUsers = cache(async () => {
             },
         });
 
+        // Get subscriptions separately to avoid relation issues
+        const subscriptions = await db.query.userSubscription.findMany({
+            where: (userSubscription, { inArray }) => 
+                inArray(userSubscription.userId, data.map(user => user.userId))
+        });
+
         // Create a Map to ensure unique users and keep highest points
         const uniqueUsersMap = new Map();
         
@@ -268,7 +274,17 @@ export const getLeaderboardUsers = cache(async () => {
             const existingUser = uniqueUsersMap.get(user.userId);
             // Keep the user with higher points or the first one if points are equal
             if (!existingUser || user.points > existingUser.points) {
-                uniqueUsersMap.set(user.userId, user);
+                // Find user's subscription
+                const subscription = subscriptions.find(sub => sub.userId === user.userId);
+                const isActive = subscription && 
+                    subscription.stripePriceId && 
+                    subscription.stripeCurrentPeriodEnd &&
+                    new Date(subscription.stripeCurrentPeriodEnd) > new Date();
+                
+                uniqueUsersMap.set(user.userId, {
+                    ...user,
+                    isPremium: !!isActive
+                });
             }
         });
 

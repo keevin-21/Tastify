@@ -72,24 +72,24 @@ export const Sidebar = ({ className }: Props) => {
                 </ClerkLoading>
                 <ClerkLoaded>
                     <SignedIn>
-                        <div className="flex items-center gap-x-3 px-2 group transition-transform hover:scale-[0.98]">
-                            <UserButton 
-                                afterSignOutUrl="/"
-                                appearance={{
-                                    elements: {
-                                        avatarBox: "h-[48px] w-[48px] ring-2 ring-[#3c3c3c] ring-offset-2 ring-offset-[#2c2c2c]",
-                                        userButtonPopoverCard: "bg-[#2c2c2c] border-[#3c3c3c] shadow-xl",
-                                        userButtonPopoverText: "text-[#f5f5f5]",
-                                        userButtonPopoverActionButton: "hover:bg-[#3c3c3c] hover:text-[#f5f5f5]",
-                                        userButtonPopoverActionButtonText: "text-[#f5f5f5]",
-                                        userButtonPopoverFooter: "hidden"
-                                    }
-                                }}
-                            />
-                            <div className="flex flex-col">
-                                <span className="text-[#f5f5f5] font-semibold">Profile</span>
-                                <span className="text-[#a1a1aa] text-sm">Manage your account</span>
-                            </div>
+                            <div className="flex items-center gap-x-3 px-2 group transition-transform hover:scale-[0.98]">
+                                <UserButton 
+                                    afterSignOutUrl="/"
+                                    appearance={{
+                                        elements: {
+                                            avatarBox: "h-[48px] w-[48px] ring-2 ring-[#3c3c3c] ring-offset-2 ring-offset-[#2c2c2c]",
+                                            userButtonPopoverCard: "bg-[#2c2c2c] border-[#3c3c3c] shadow-xl",
+                                            userButtonPopoverText: "text-[#f5f5f5]",
+                                            userButtonPopoverActionButton: "hover:bg-[#3c3c3c] hover:text-[#f5f5f5]",
+                                            userButtonPopoverActionButtonText: "text-[#f5f5f5]",
+                                            userButtonPopoverFooter: "hidden"
+                                        }
+                                    }}
+                                />
+                                <div className="flex flex-col">
+                                    <span className="text-[#f5f5f5] font-semibold">Profile</span>
+                                    <span className="text-[#a1a1aa] text-sm">Manage your account</span>
+                                </div>
                         </div>
                     </SignedIn>
                 </ClerkLoaded>
