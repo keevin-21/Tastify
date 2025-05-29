@@ -13,8 +13,8 @@ Antes de comenzar, asegúrese de tener instalado en su sistema:
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone <URL_del_repositorio>
-cd tastify
+git clone https://github.com/keevin-21/Tastify.git
+cd Tastify
 ```
 
 ### 2. Instalar Dependencias
